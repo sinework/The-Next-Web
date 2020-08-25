@@ -54,12 +54,18 @@ ul,li {
 }
 
 /*navigation fixed styling */
+.header {
+  position: sticky;
+  top:0;
+  width: 100%;
+  z-index: 100;
+}
+
 .navfixed {
   height: 50px;
   font-family: 'Nova Square', cursive;
   font-size:17px;
-  position: sticky;
-  top: 0;
+  background-color: white;
 }
 #sideinfologo {
   width: 125px;
@@ -123,38 +129,38 @@ margin-right: 25px;
     grid-gap: 6px;
     grid-template-areas: "main side-top "
                         "main side-bottom";
-height: 65vh;
-margin:2px;
-  
+height:50vh;
+margin:4px;
+
 }
 
 .main-pic{
 
     /* background:  linear-gradient(rgba(196, 32, 32, 0.25)),url("./images/main-pic-big.png"); */
     background: linear-gradient(180deg, #f42 0%, rgba(68, 152, 217, 0.11528361344537819) 100%), url("./images/main-pic-big.png");
-
     background-size: cover;
     background-repeat: no-repeat;
     grid-area: main;
-   
-
+    padding-bottom: 2%;
+    padding:1%;
 }
+
 .side-pic-top{
-   
     background:  linear-gradient(180deg, rgba(27, 112, 186, .5) 0%, rgba(68, 152, 217, 0.11528361344537819) 100%)
     , url("./images/side-top.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     grid-area: side-top;
-
+    padding-bottom: 2%;
 }
+
 .side-pic-bottom{
     background: linear-gradient(180deg, rgba(27, 112, 186, .5) 0%, rgba(68, 152, 217, 0.11528361344537819) 100%)
     , url("./images/side-pic.png");
     background-size: cover;
     background-repeat: no-repeat;
     grid-area: side-bottom;
-
+    padding-bottom: 2%;
 }
 
 /* logo sizing */
@@ -182,21 +188,60 @@ margin:2px;
     margin:0 4px;
 }
 .headline{
-    
+
      font-family: 'Russo One', sans-serif;
-     font-size: 50px;
+     font-size:250%;
      text-align: justify;
      padding-top: 105px;
 }
 
 .side-headline{
-    
     font-family: 'Russo One', sans-serif;
-    font-size: 25px;
+    font-size: 150%;
     text-align: justify;
     padding-top: 150px;
 }
 
 .side-pic-content i{
     margin:0 4px;
+}
+
+/* styling latest news section*/
+
+.newscont {
+  width: 80%;
+  margin: auto;
+}
+
+.newsitem {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap:10px;
+  justify-content: center;
+}
+
+.latest-news {
+margin-top: 12%;
+}
+
+.item a {
+  text-decoration: none;
+  color:black;
+  font-size: 16px;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+}
+
+.author {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 13px;
+  color:grey;
+}
+
+.title a {
+    font-family: 'Russo One', sans-serif;
+  text-decoration: none;
+  color: #f42;
+  font-size: 28px;
+  font-weight: bolder;
 }
