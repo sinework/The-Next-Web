@@ -113,3 +113,90 @@ margin-right: 25px;
   color:black;
   font-size: 15px;
 }
+
+/* Styles for the main news section */
+
+/* styling for making the sections a grid layout */
+
+.main-news-section{
+    display: grid;
+    grid-gap: 6px;
+    grid-template-areas: "main side-top "
+                        "main side-bottom";
+height: 65vh;
+margin:2px;
+  
+}
+
+.main-pic{
+
+    /* background:  linear-gradient(rgba(196, 32, 32, 0.25)),url("./images/main-pic-big.png"); */
+    background: linear-gradient(180deg, #f42 0%, rgba(68, 152, 217, 0.11528361344537819) 100%), url("./images/main-pic-big.png");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: main;
+   
+
+}
+.side-pic-top{
+   
+    background:  linear-gradient(180deg, rgba(27, 112, 186, .5) 0%, rgba(68, 152, 217, 0.11528361344537819) 100%)
+    , url("./images/side-top.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: side-top;
+
+}
+.side-pic-bottom{
+    background: linear-gradient(180deg, rgba(27, 112, 186, .5) 0%, rgba(68, 152, 217, 0.11528361344537819) 100%)
+    , url("./images/side-pic.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: side-bottom;
+
+}
+
+/* logo sizing */
+.logo-TNW{
+    display: flex;
+    justify-content: space-between;
+}
+.logo-TNW img{
+    width: 412px;
+    height: 100px;
+    margin:20px;
+}
+.logo-TNW p{
+    color:#fff;
+    margin: 20px;
+}
+/* styling the headline texts*/
+
+.pic-content p, .side-pic-top p, .side-pic-bottom p{
+    color: #fff;
+    margin: 0  0 0 20px;
+}
+
+.pic-content i{
+    margin:0 4px;
+}
+.headline{
+    
+     font-family: 'Russo One', sans-serif;
+     font-size: 50px;
+     text-align: justify;
+     padding-top: 105px;
+}
+
+.side-headline{
+    
+    font-family: 'Russo One', sans-serif;
+    font-size: 25px;
+    text-align: justify;
+    padding-top: 150px;
+}
+
+.side-pic-content i{
+    margin:0 4px;
+}
