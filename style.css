@@ -1,0 +1,115 @@
+/*General reset and classes*/
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,li {
+  margin: 0;
+}
+
+.flexspacebetween {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.flexcenter {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+/*responsiveness for mobile devices*/
+@media only screen and (max-width:767px) {}
+/*responsiveness for medium devices*/
+@media only screen and (max-width: 1023px) and (min-width: 768px) {}
+
+/*styling for large screen */
+
+
+/*top navigation styling */
+.navtop {
+  background-color: black;
+  padding: 10px;
+}
+.navlist {
+  display: flex;
+  list-style-type: none;
+}
+
+.navlist li {
+  margin-right: 15px;
+}
+.navlist a {
+  text-decoration: none;
+  color:#aaa;
+}
+.navlist a:hover {
+  color:white;
+}
+#whitetext {
+  color:white;
+}
+
+/*navigation fixed styling */
+.navfixed {
+  height: 50px;
+  font-family: 'Nova Square', cursive;
+  font-size:17px;
+  position: sticky;
+  top: 0;
+}
+#sideinfologo {
+  width: 125px;
+  height: 54px;
+}
+
+.sideinfo {
+margin-right: 25px;
+}
+
+.time {
+  margin-right: 20px;
+  font-size: 120%;
+  color:red;
+  font-weight: bold;
+}
+.ticket {
+  background-color: #0cc;
+  color:white;
+  width: 90px;
+  height: 30px;
+  font-size:60%;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.ticket:hover {
+  background-color: purple;
+}
+
+#searchbtn {
+  transform: rotate(90deg);
+  color:#aaa;
+}
+
+.navli2 a:hover {
+  color:black;
+}
+
+/*yellow nav styling */
+
+.yellow-nav {
+  background-color: #ffe712;
+  height: 20px;
+  padding: 5px;
+}
+.yellow-nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color:black;
+  font-size: 15px;
+}
