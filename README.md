@@ -1,4 +1,5 @@
 # The-Next-Web
+
 This is a fully responsive replica of the The Next web website landing page.  
 <img src="images/sc1.PNG" alt="projectimg">
 <img src="images/sc2.PNG" alt="projectimg">
@@ -15,7 +16,7 @@ CSS
 Atom editor, Visual code
 
 <h2>Live Demo</h2>
-https://smashing-magazine-replica.netlify.app/
+https://the-next-web-replica.netlify.app/
 
 <h2>Getting Started</h2>
 To get a local copy up and running follow these simple example steps.
