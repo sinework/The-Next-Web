@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>The-Next-Web-Clone</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
       rel="stylesheet"
@@ -25,75 +25,73 @@
   </head>
 
   <body>
+    <!--Black navigation for big screen -->
+    <nav class="navtop flexspacebetween">
+      <ul class="navlist">
+        <li><a href="" id="whitetext">News</a></li>
+        <li>
+          <a href="">Events <i class="fas fa-caret-down"></i></a>
+        </li>
+        <li>
+          <a href="">Business <i class="fas fa-caret-down"></i></a>
+        </li>
+        <li><a href="">AMAs</a></li>
+        <li><a href="">Spaces</a></li>
+        <li><a href="">Terms & Conditions</a></li>
+      </ul>
 
-      <!--Black navigation for big screen -->
-      <nav class="navtop flexspacebetween">
-        <ul class="navlist">
-          <li><a href="" id="whitetext">News</a></li>
-          <li>
-            <a href="">Events <i class="fas fa-caret-down"></i></a>
-          </li>
-          <li>
-            <a href="">Business <i class="fas fa-caret-down"></i></a>
-          </li>
-          <li><a href="">AMAs</a></li>
-          <li><a href="">Spaces</a></li>
-          <li><a href="">Terms & Conditions</a></li>
-        </ul>
+      <ul class="navlist">
+        <li><a href="">About</a></li>
+        <li><a href="">Advertise</a></li>
+        <li><a href="">Jobs</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
 
-        <ul class="navlist">
-          <li><a href="">About</a></li>
-          <li><a href="">Advertise</a></li>
-          <li><a href="">Jobs</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
+      <div class="navlogom-m">
+        <img src="Images/tnw.svg" alt="" />
+      </div>
+    </nav>
 
-        <div class="navlogom-m">
+    <header class="header">
+      <!--main navigation for all screen -->
+
+      <nav class="navfixed flexspacebetween">
+        <div class="navlogom-s">
           <img src="Images/tnw.svg" alt="" />
+        </div>
+
+        <ul class="navlist navli2">
+          <li><a href="#">Latest</a></li>
+          <li><a href="#">Hard Fork</a></li>
+          <li><a href="#">Plugged</a></li>
+          <li><a href="#">ReadMe</a></li>
+          <li><a href="#">Growth Quarters</a></li>
+          <li><a href="#">Shift</a></li>
+          <li><a href="#">Neural</a></li>
+        </ul>
+
+        <div class="sideinfo flexcenter">
+          <i class="fas fa-search" id="searchbtn"></i>
+          <i class="fas fa-bars" id="hamburger"></i>
+          <img
+            src="Images/event.svg"
+            alt="event"
+            id="sideinfologo"
+            class="hiddenmd"
+          />
+          <span class="time hiddenmd">37:00:35:51</span>
+          <button class="ticket hiddenmd">GET TICKETS</button>
         </div>
       </nav>
 
-      <header class="header">
-        <!--main navigation for all screen -->
-
-        <nav class="navfixed flexspacebetween">
-
-          <div class="navlogom-s">
-            <img src="Images/tnw.svg" alt="" />
-          </div>
-
-          <ul class="navlist navli2">
-            <li><a href="#">Latest</a></li>
-            <li><a href="#">Hard Fork</a></li>
-            <li><a href="#">Plugged</a></li>
-            <li><a href="#">ReadMe</a></li>
-            <li><a href="#">Growth Quarters</a></li>
-            <li><a href="#">Shift</a></li>
-            <li><a href="#">Neural</a></li>
-          </ul>
-
-          <div class="sideinfo flexcenter">
-            <i class="fas fa-search" id="searchbtn"></i>
-            <i class="fas fa-bars" id="hamburger"></i>
-            <img
-              src="Images/event.svg"
-              alt="event"
-              id="sideinfologo"
-              class="hiddenmd"
-            />
-            <span class="time hiddenmd">37:00:35:51</span>
-            <button class="ticket hiddenmd">GET TICKETS</button>
-          </div>
-        </nav>
-
-        <!--main navigation for all screen -->
-        <div class="yellow-nav">
-          <a href="#"
-            >Join TNW2020, our 15th annual flagship event. Online. Get tickets
-            <i class="fas fa-long-arrow-alt-right"></i
-          ></a>
-        </div>
-      </header>
+      <!--main navigation for all screen -->
+      <div class="yellow-nav">
+        <a href="#"
+          >Join TNW2020, our 15th annual flagship event. Online. Get tickets
+          <i class="fas fa-long-arrow-alt-right"></i
+        ></a>
+      </div>
+    </header>
 
     <main>
       <!-- This is the main news section with one big image and two side elements -->
@@ -159,88 +157,86 @@
             <div class="item itemsmall">
               <img src="Images/latest1.png" alt="latest1" />
               <div class="textcontsmall">
-              <h4>
-                <a href="#"
-                  >This company claims it can use nuclear waste to make
-                  batteries that last 28,000 years without charging</a
-                >
-              </h4>
-              <p class="author">Matthew Beedham-47 minutes ago</p>
+                <h4>
+                  <a href="#"
+                    >This company claims it can use nuclear waste to make
+                    batteries that last 28,000 years without charging</a
+                  >
+                </h4>
+                <p class="author">Matthew Beedham-47 minutes ago</p>
               </div>
             </div>
 
             <div class="item itemsmall">
               <img src="Images/latest2.jpg" alt="latest2" />
               <div class="textcontsmall">
-              <h4><a href="#">Here’s what to expect from Python 3.9</a></h4>
-              <p class="author">Live Code Stream-51 minutes ago</p>
-            </div>
+                <h4><a href="#">Here’s what to expect from Python 3.9</a></h4>
+                <p class="author">Live Code Stream-51 minutes ago</p>
+              </div>
             </div>
 
             <div class="item itemsmall">
               <img src="Images/latest3.png" alt="latest3" />
               <div class="textcontsmall">
-              <h4>
-                <a href="#"
-                  >This company claims it can use nuclear waste to make
-                  batteries that last 28,000 years without charging</a
-                >
-              </h4>
-              <p class="author">Matthew Beedham-47 minutes ago</p>
-            </div>
+                <h4>
+                  <a href="#"
+                    >This company claims it can use nuclear waste to make
+                    batteries that last 28,000 years without charging</a
+                  >
+                </h4>
+                <p class="author">Matthew Beedham-47 minutes ago</p>
+              </div>
             </div>
 
             <div class="item itemsmall">
               <img src="Images/latest4.jpg" alt="latest4" />
               <div class="textcontsmall">
-              <h4><a href="#">Here’s what to expect from Python 3.9</a></h4>
-              <p class="author">Live Code Stream-51 minutes ago</p>
-            </div>
+                <h4><a href="#">Here’s what to expect from Python 3.9</a></h4>
+                <p class="author">Live Code Stream-51 minutes ago</p>
+              </div>
             </div>
 
             <div class="item itemsmall">
               <img src="Images/latest5.jpg" alt="latest5" />
               <div class="textcontsmall">
-              <h4>
-                <a href="#"
-                  >This company claims it can use nuclear waste to make
-                  batteries that last 28,000 years without charging</a
-                >
-              </h4>
-              <p class="author">Matthew Beedham-47 minutes ago</p>
-            </div>
+                <h4>
+                  <a href="#"
+                    >This company claims it can use nuclear waste to make
+                    batteries that last 28,000 years without charging</a
+                  >
+                </h4>
+                <p class="author">Matthew Beedham-47 minutes ago</p>
+              </div>
             </div>
 
             <div class="item itemsmall">
               <img src="Images/latest6.jpg" alt="latest6" />
               <div class="textcontsmall">
-              <h4><a href="#">Here’s what to expect from Python 3.9</a></h4>
-              <p class="author">Live Code Stream-51 minutes ago</p>
-            </div>
+                <h4><a href="#">Here’s what to expect from Python 3.9</a></h4>
+                <p class="author">Live Code Stream-51 minutes ago</p>
+              </div>
             </div>
 
             <div class="item itemsmall">
               <img src="Images/latest7.jpg" alt="latest7" />
               <div class="textcontsmall">
-              <h4>
-                <a href="#"
-                  >This company claims it can use nuclear waste to make
-                  batteries that last 28,000 years without charging</a
-                >
-              </h4>
-              <p class="author">Matthew Beedham-47 minutes ago</p>
-            </div>
+                <h4>
+                  <a href="#"
+                    >This company claims it can use nuclear waste to make
+                    batteries that last 28,000 years without charging</a
+                  >
+                </h4>
+                <p class="author">Matthew Beedham-47 minutes ago</p>
+              </div>
             </div>
 
             <div class="item itemsmall">
               <img src="Images/latest9.png" alt="latest8" />
-                <div class="textcontsmall">
-              <h4><a href="#">Here’s what to expect from Python 3.9</a></h4>
-              <p class="author">Live Code Stream-51 minutes ago</p>
+              <div class="textcontsmall">
+                <h4><a href="#">Here’s what to expect from Python 3.9</a></h4>
+                <p class="author">Live Code Stream-51 minutes ago</p>
+              </div>
             </div>
-            </div>
-
-
           </div>
         </div>
       </section>
@@ -474,9 +470,7 @@
                 </p></a
               >
             </div>
-            <div class="flexed-pic">
-              <img src="" alt="" />
-            </div>
+            <div class="flexed-pic"></div>
           </div>
           <!-- UL elements -->
           <div class="ul-news-elements">
@@ -537,7 +531,7 @@
               >
             </div>
             <div class="flexed-pic">
-              <img src="" alt="" />
+             
             </div>
           </div>
           <!-- UL elements -->
@@ -661,7 +655,7 @@
               >
             </div>
             <div class="flexed-pic">
-              <img src="" alt="" />
+              
             </div>
           </div>
           <!-- UL elements -->
@@ -723,7 +717,7 @@
               >
             </div>
             <div class="flexed-pic">
-              <img src="" alt="" />
+            
             </div>
           </div>
           <!-- UL elements -->
@@ -846,7 +840,7 @@
               >
             </div>
             <div class="flexed-pic">
-              <img src="" alt="" />
+              
             </div>
           </div>
           <!-- UL elements -->
@@ -908,7 +902,7 @@
               >
             </div>
             <div class="flexed-pic">
-              <img src="" alt="" />
+              
             </div>
           </div>
           <!-- UL elements -->
@@ -948,8 +942,10 @@
       <section class="latest-deals">
         <div class="newscont">
           <div class="dealtitlediv">
-          <h2 class="title"><a href="">Latest Deals <i class="fas fa-chevron-right"></i></a></h2>
-          <p><a href="#">See all Deals</a></p>
+            <h2 class="title">
+              <a href="">Latest Deals <i class="fas fa-chevron-right"></i></a>
+            </h2>
+            <p><a href="#">See all Deals</a></p>
           </div>
 
           <div class="newsitem">
@@ -959,12 +955,13 @@
                 <h5 class="ptag">90% OFF</h5>
               </div>
               <div class="textcontsmall2">
-              <h4 class="dealhead">
-                <a href="#"
-                  >The Complete Salesforce Trailhead 2020: From Zero to Hero
-                  7-Course Bundle</a>
-              </h4>
-              <p class="dealprice">25$</p>
+                <h4 class="dealhead">
+                  <a href="#"
+                    >The Complete Salesforce Trailhead 2020: From Zero to Hero
+                    7-Course Bundle</a
+                  >
+                </h4>
+                <p class="dealprice">25$</p>
               </div>
             </div>
 
@@ -974,11 +971,13 @@
                 <h5 class="ptag">85% OFF</h5>
               </div>
               <div class="textcontsmall2">
-              <h4 class="dealhead">
-                <a href="#">The Complete Salesforce Trailhead 2020: From Zero to Hero
-                7-Course Bundle</a>
-              </h4>
-              <p class="dealprice">55$</p>
+                <h4 class="dealhead">
+                  <a href="#"
+                    >The Complete Salesforce Trailhead 2020: From Zero to Hero
+                    7-Course Bundle</a
+                  >
+                </h4>
+                <p class="dealprice">55$</p>
               </div>
             </div>
 
@@ -988,13 +987,13 @@
                 <h5 class="ptag">95% OFF</h5>
               </div>
               <div class="textcontsmall2">
-              <h4 class="dealhead">
-                <a href="#"
-                  >The Complete Salesforce Trailhead 2020: From Zero to Hero
-                  7-Course Bundle</a
-                >
-              </h4>
-              <p class="dealprice">25$</p>
+                <h4 class="dealhead">
+                  <a href="#"
+                    >The Complete Salesforce Trailhead 2020: From Zero to Hero
+                    7-Course Bundle</a
+                  >
+                </h4>
+                <p class="dealprice">25$</p>
               </div>
             </div>
 
@@ -1004,11 +1003,13 @@
                 <h5 class="ptag">85% OFF</h5>
               </div>
               <div class="textcontsmall2">
-              <h4 class="dealhead">
-                <a href="#">The Complete Salesforce Trailhead 2020: From Zero to Hero
-                7-Course Bundle</a>
-              </h4>
-              <p class="dealprice">55$</p>
+                <h4 class="dealhead">
+                  <a href="#"
+                    >The Complete Salesforce Trailhead 2020: From Zero to Hero
+                    7-Course Bundle</a
+                  >
+                </h4>
+                <p class="dealprice">55$</p>
               </div>
             </div>
 
@@ -1018,13 +1019,13 @@
                 <h5 class="ptag">75% OFF</h5>
               </div>
               <div class="textcontsmall2">
-              <h4 class="dealhead">
-                <a href="#"
-                  >The Complete Salesforce Trailhead 2020: From Zero to Hero
-                  7-Course Bundle</a
-                >
-              </h4>
-              <p class="dealprice">25$</p>
+                <h4 class="dealhead">
+                  <a href="#"
+                    >The Complete Salesforce Trailhead 2020: From Zero to Hero
+                    7-Course Bundle</a
+                  >
+                </h4>
+                <p class="dealprice">25$</p>
               </div>
             </div>
 
@@ -1034,11 +1035,13 @@
                 <h5 class="ptag">90% OFF</h5>
               </div>
               <div class="textcontsmall2">
-              <h4 class="dealhead">
-                <a href="#">The Complete Salesforce Trailhead 2020: From Zero to Hero
-                7-Course Bundle</a>
-              </h4>
-              <p class="dealprice">55$</p>
+                <h4 class="dealhead">
+                  <a href="#"
+                    >The Complete Salesforce Trailhead 2020: From Zero to Hero
+                    7-Course Bundle</a
+                  >
+                </h4>
+                <p class="dealprice">55$</p>
               </div>
             </div>
 
@@ -1048,13 +1051,13 @@
                 <h5 class="ptag">80% OFF</h5>
               </div>
               <div class="textcontsmall2">
-              <h4 class="dealhead">
-                <a href="#"
-                  >The Complete Salesforce Trailhead 2020: From Zero to Hero
-                  7-Course Bundle</a
-                >
-              </h4>
-              <p class="dealprice">25$</p>
+                <h4 class="dealhead">
+                  <a href="#"
+                    >The Complete Salesforce Trailhead 2020: From Zero to Hero
+                    7-Course Bundle</a
+                  >
+                </h4>
+                <p class="dealprice">25$</p>
               </div>
             </div>
 
@@ -1064,11 +1067,13 @@
                 <h5 class="ptag">95% OFF</h5>
               </div>
               <div class="textcontsmall2">
-              <h4 class="dealhead">
-                <a href="#">The Complete Salesforce Trailhead 2020: From Zero to Hero
-                7-Course Bundle</a>
-              </h4>
-              <p class="dealprice">55$</p>
+                <h4 class="dealhead">
+                  <a href="#"
+                    >The Complete Salesforce Trailhead 2020: From Zero to Hero
+                    7-Course Bundle</a
+                  >
+                </h4>
+                <p class="dealprice">55$</p>
               </div>
             </div>
           </div>
