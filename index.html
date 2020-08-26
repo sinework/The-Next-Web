@@ -23,8 +23,9 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
-    <div class="navcont">
+
       <!--Black navigation for big screen -->
       <nav class="navtop flexspacebetween">
         <ul class="navlist">
@@ -46,16 +47,21 @@
           <li><a href="">Jobs</a></li>
           <li><a href="">Contact</a></li>
         </ul>
-      </nav>
 
-      <div class="navlogom-s">
-        <img src="Images/tnw.svg" alt="" />
-      </div>
+        <div class="navlogom-m">
+          <img src="Images/tnw.svg" alt="" />
+        </div>
+      </nav>
 
       <header class="header">
         <!--main navigation for all screen -->
 
         <nav class="navfixed flexspacebetween">
+
+          <div class="navlogom-s">
+            <img src="Images/tnw.svg" alt="" />
+          </div>
+
           <ul class="navlist navli2">
             <li><a href="#">Latest</a></li>
             <li><a href="#">Hard Fork</a></li>
@@ -68,6 +74,7 @@
 
           <div class="sideinfo flexcenter">
             <i class="fas fa-search" id="searchbtn"></i>
+            <i class="fas fa-bars" id="hamburger"></i>
             <img
               src="Images/event.svg"
               alt="event"
@@ -87,7 +94,7 @@
           ></a>
         </div>
       </header>
-    </div>
+
     <main>
       <!-- This is the main news section with one big image and two side elements -->
       <section class="main-news-section">
@@ -99,11 +106,11 @@
               <p id="date">Thursday - June 24, 2020</p>
             </div>
 
-            <p class="headline">
+            <h1 class="headline">
               Two left feet? Facebook’s new AI <br id="br-first" />
               dance choreographer can teach you <br id="br" />
               some brand new moves
-            </p>
+            </h1>
             <p>
               <small
                 >by Tristan Greene
@@ -149,8 +156,9 @@
           </h2>
 
           <div class="newsitem">
-            <div class="item">
+            <div class="item itemsmall">
               <img src="Images/latest1.png" alt="latest1" />
+              <div class="textcontsmall">
               <h4>
                 <a href="#"
                   >This company claims it can use nuclear waste to make
@@ -158,16 +166,20 @@
                 >
               </h4>
               <p class="author">Matthew Beedham-47 minutes ago</p>
+              </div>
             </div>
 
-            <div class="item">
+            <div class="item itemsmall">
               <img src="Images/latest2.jpg" alt="latest2" />
+              <div class="textcontsmall">
               <h4><a href="#">Here’s what to expect from Python 3.9</a></h4>
               <p class="author">Live Code Stream-51 minutes ago</p>
             </div>
+            </div>
 
-            <div class="item">
+            <div class="item itemsmall">
               <img src="Images/latest3.png" alt="latest3" />
+              <div class="textcontsmall">
               <h4>
                 <a href="#"
                   >This company claims it can use nuclear waste to make
@@ -176,15 +188,19 @@
               </h4>
               <p class="author">Matthew Beedham-47 minutes ago</p>
             </div>
+            </div>
 
-            <div class="item">
+            <div class="item itemsmall">
               <img src="Images/latest4.jpg" alt="latest4" />
+              <div class="textcontsmall">
               <h4><a href="#">Here’s what to expect from Python 3.9</a></h4>
               <p class="author">Live Code Stream-51 minutes ago</p>
             </div>
+            </div>
 
-            <div class="item">
+            <div class="item itemsmall">
               <img src="Images/latest5.jpg" alt="latest5" />
+              <div class="textcontsmall">
               <h4>
                 <a href="#"
                   >This company claims it can use nuclear waste to make
@@ -193,15 +209,19 @@
               </h4>
               <p class="author">Matthew Beedham-47 minutes ago</p>
             </div>
+            </div>
 
-            <div class="item">
+            <div class="item itemsmall">
               <img src="Images/latest6.jpg" alt="latest6" />
+              <div class="textcontsmall">
               <h4><a href="#">Here’s what to expect from Python 3.9</a></h4>
               <p class="author">Live Code Stream-51 minutes ago</p>
             </div>
+            </div>
 
-            <div class="item">
+            <div class="item itemsmall">
               <img src="Images/latest7.jpg" alt="latest7" />
+              <div class="textcontsmall">
               <h4>
                 <a href="#"
                   >This company claims it can use nuclear waste to make
@@ -210,12 +230,17 @@
               </h4>
               <p class="author">Matthew Beedham-47 minutes ago</p>
             </div>
+            </div>
 
-            <div class="item">
+            <div class="item itemsmall">
               <img src="Images/latest9.png" alt="latest8" />
+                <div class="textcontsmall">
               <h4><a href="#">Here’s what to expect from Python 3.9</a></h4>
               <p class="author">Live Code Stream-51 minutes ago</p>
             </div>
+            </div>
+
+
           </div>
         </div>
       </section>
@@ -232,7 +257,7 @@
           </h2>
 
           <div class="newsitem latest">
-            <div class="item">
+            <div class="item item2">
               <div class="stylehead">
                 <h3 class="styletitle">Amwell</h3>
                 <img src="Images/smallicon1.jpg" alt="" class="smallicon" />
@@ -263,7 +288,7 @@
               >
             </div>
 
-            <div class="item">
+            <div class="item item2">
               <div class="stylehead">
                 <h3 class="styletitle">Amwell</h3>
                 <img src="Images/smallicon2.png" alt="" class="smallicon" />
@@ -294,7 +319,7 @@
               >
             </div>
 
-            <div class="item">
+            <div class="item item2">
               <div class="stylehead">
                 <h3 class="styletitle">Amwell</h3>
                 <img src="Images/smallicon3.jpg" alt="" class="smallicon" />
@@ -325,7 +350,7 @@
               >
             </div>
 
-            <div class="item">
+            <div class="item item2">
               <div class="stylehead">
                 <h3 class="styletitle">Amwell</h3>
                 <img src="Images/smallicon4.jpg" alt="" class="smallicon" />
@@ -922,9 +947,10 @@
 
       <section class="latest-deals">
         <div class="newscont">
-          <h2 class="title">
-            <a href="">Latest Deals <i class="fas fa-chevron-right"></i></a>
-          </h2>
+          <div class="dealtitlediv">
+          <h2 class="title"><a href="">Latest Deals <i class="fas fa-chevron-right"></i></a></h2>
+          <p><a href="#">See all Deals</a></p>
+          </div>
 
           <div class="newsitem">
             <div class="item ditem">
@@ -932,13 +958,14 @@
                 <img src="Images/deal1.jpg" alt="deal1" />
                 <h5 class="ptag">90% OFF</h5>
               </div>
+              <div class="textcontsmall2">
               <h4 class="dealhead">
                 <a href="#"
                   >The Complete Salesforce Trailhead 2020: From Zero to Hero
-                  7-Course Bundle</a
-                >
+                  7-Course Bundle</a>
               </h4>
               <p class="dealprice">25$</p>
+              </div>
             </div>
 
             <div class="item ditem">
@@ -946,10 +973,13 @@
                 <img src="Images/deal2.jpg" alt="deal2" />
                 <h5 class="ptag">85% OFF</h5>
               </div>
+              <div class="textcontsmall2">
               <h4 class="dealhead">
-                <a href="#">AWS Cloud Essentials Course</a>
+                <a href="#">The Complete Salesforce Trailhead 2020: From Zero to Hero
+                7-Course Bundle</a>
               </h4>
               <p class="dealprice">55$</p>
+              </div>
             </div>
 
             <div class="item ditem">
@@ -957,6 +987,7 @@
                 <img src="Images/deal3.jpg" alt="deal3" />
                 <h5 class="ptag">95% OFF</h5>
               </div>
+              <div class="textcontsmall2">
               <h4 class="dealhead">
                 <a href="#"
                   >The Complete Salesforce Trailhead 2020: From Zero to Hero
@@ -964,6 +995,7 @@
                 >
               </h4>
               <p class="dealprice">25$</p>
+              </div>
             </div>
 
             <div class="item ditem">
@@ -971,10 +1003,13 @@
                 <img src="Images/deal4.jpg" alt="deal4" />
                 <h5 class="ptag">85% OFF</h5>
               </div>
+              <div class="textcontsmall2">
               <h4 class="dealhead">
-                <a href="#">AWS Cloud Essentials Course</a>
+                <a href="#">The Complete Salesforce Trailhead 2020: From Zero to Hero
+                7-Course Bundle</a>
               </h4>
               <p class="dealprice">55$</p>
+              </div>
             </div>
 
             <div class="item ditem">
@@ -982,6 +1017,7 @@
                 <img src="Images/deal5.jpg" alt="deal5" />
                 <h5 class="ptag">75% OFF</h5>
               </div>
+              <div class="textcontsmall2">
               <h4 class="dealhead">
                 <a href="#"
                   >The Complete Salesforce Trailhead 2020: From Zero to Hero
@@ -989,6 +1025,7 @@
                 >
               </h4>
               <p class="dealprice">25$</p>
+              </div>
             </div>
 
             <div class="item ditem">
@@ -996,10 +1033,13 @@
                 <img src="Images/deal6.jpg" alt="deal6" />
                 <h5 class="ptag">90% OFF</h5>
               </div>
+              <div class="textcontsmall2">
               <h4 class="dealhead">
-                <a href="#">AWS Cloud Essentials Course</a>
+                <a href="#">The Complete Salesforce Trailhead 2020: From Zero to Hero
+                7-Course Bundle</a>
               </h4>
               <p class="dealprice">55$</p>
+              </div>
             </div>
 
             <div class="item ditem">
@@ -1007,6 +1047,7 @@
                 <img src="Images/deal7.jpg" alt="deal7" />
                 <h5 class="ptag">80% OFF</h5>
               </div>
+              <div class="textcontsmall2">
               <h4 class="dealhead">
                 <a href="#"
                   >The Complete Salesforce Trailhead 2020: From Zero to Hero
@@ -1014,6 +1055,7 @@
                 >
               </h4>
               <p class="dealprice">25$</p>
+              </div>
             </div>
 
             <div class="item ditem">
@@ -1021,10 +1063,13 @@
                 <img src="Images/deal8.jpg" alt="deal8" />
                 <h5 class="ptag">95% OFF</h5>
               </div>
+              <div class="textcontsmall2">
               <h4 class="dealhead">
-                <a href="#">AWS Cloud Essentials Course</a>
+                <a href="#">The Complete Salesforce Trailhead 2020: From Zero to Hero
+                7-Course Bundle</a>
               </h4>
               <p class="dealprice">55$</p>
+              </div>
             </div>
           </div>
         </div>

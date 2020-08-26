@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  position: relative;
 }
 ul,
 li {
@@ -27,6 +28,7 @@ li {
 .navtop {
   background-color: black;
   padding: 10px;
+  position: relative;
 }
 .navlist {
   display: flex;
@@ -48,16 +50,29 @@ li {
 }
 
 /*navlogom&s style */
-.navlogom-s {
+.navlogom-m {
   background: linear-gradient(to bottom right, #c09, #f42 85%);
   width: 106px;
   height: 55px;
   text-align: center;
   padding-top: 25px;
   display: none;
+  top:0;
+  left: 0;
+}
+.navlogom-m img {
+  width: 80%;
+}
+.navlogom-s {
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  width: 85px;
+  height:25px;
+  padding-top: 15px;
+  padding-left: 20px;
+  display: none;
 }
 .navlogom-s img {
-  width: 80%;
+  width: 100%;
 }
 
 /*navigation fixed styling */
@@ -107,6 +122,9 @@ li {
 #searchbtn {
   transform: rotate(90deg);
   color: #aaa;
+}
+#hamburger {
+  display: none;
 }
 
 .navli2 a:hover {
@@ -202,7 +220,7 @@ li {
 .side-pic-top p,
 .side-pic-bottom p {
   color: #fff;
-  margin: 0 0 0 20px;
+  margin: 0 0 0 10px;
 }
 
 .pic-content i {
@@ -210,16 +228,20 @@ li {
 }
 .headline {
   font-family: "Russo One", sans-serif;
-  font-size: 250%;
+  font-size: 200%;
   text-align: justify;
-  padding-top: 105px;
+  padding-top: 140px;
+  color:white;
+  text-shadow: 1px 1px black;
+  margin-bottom: 5px;
 }
 
 .side-headline {
   font-family: "Russo One", sans-serif;
-  font-size: 150%;
+  font-size: 130%;
   text-align: justify;
-  padding-top: 150px;
+  padding-top: 170px;
+  text-shadow: 1px 1px black;
 }
 
 .side-pic-content i {
@@ -229,7 +251,7 @@ li {
 /* styling latest news section*/
 
 .newscont {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
@@ -241,8 +263,12 @@ li {
 }
 
 .latest-news {
-  margin-top: 12%;
+  margin-top:200px;
 }
+.item img {
+  width: 100%;
+}
+
 
 .item a {
   text-decoration: none;
@@ -292,7 +318,7 @@ h5 {
   margin: 0;
 }
 
-.smallicon {
+.item2 img {
   height: 60px;
   width: 60px;
   position: absolute;
@@ -338,7 +364,7 @@ h5 {
   grid-template-columns: repeat(3, 1fr);
   margin: auto;
   grid-gap: 5px;
-  width: 80%;
+  width: 90%;
 }
 
 /* Grid item styling. The item container is flexed with direction of column */
@@ -363,8 +389,8 @@ h5 {
     url("./images/apple-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 340px;
-  height: 276px;
+  width: 100%;
+  height:100%;
 }
 .sec-4-big-pic-first a {
   text-decoration: none;
@@ -379,8 +405,8 @@ h5 {
     url("./images/second.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 340px;
-  height: 276px;
+  width: 100%;
+  height:100%;
 }
 
 .sec-4-big-pic-second a {
@@ -397,8 +423,8 @@ h5 {
     url("./images/third.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 340px;
-  height: 276px;
+  width: 100%;
+  height:100%;
 }
 .sec-4-big-pic-third a {
   text-decoration: none;
@@ -480,13 +506,24 @@ h5 {
   margin: 5px 0;
 }
 .ditem img {
-  width: 270px;
+  width: 100%;
   height: 200px;
 }
 
 .ditem {
   margin-bottom: 20px;
 }
+.dealtitlediv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dealtitlediv p a {
+  text-decoration: none;
+  color:#f42;
+}
+
 .imgcont {
   position: relative;
   overflow: hidden;
@@ -511,19 +548,19 @@ h5 {
 footer {
   background-color: #1a1a1a;
   padding: 2% 0 0 0;
+  text-align: center;
 }
 .iconcont {
   text-align: center;
-  width: 50%;
   margin: 0 auto;
 }
 
 .ficon {
   color: white;
-  margin: 5px 10px;
-  font-size: 120%;
+  margin: 10px;
+  font-size: 100%;
   background-color: #333;
-  padding: 12px;
+  padding:8px;
   border-radius: 50%;
   border: 2px solid #333;
 }
@@ -534,27 +571,30 @@ footer {
 }
 
 .footnav {
+  text-align: center;
   width: 25%;
-  justify-content: space-around;
-  display: flex;
   margin: 2% auto;
   font-size: 75%;
   text-align: center;
+  padding-bottom: 20px;
 }
 .footnav li {
   list-style-type: none;
+  float: left;
 }
 
 .footnav a {
   text-decoration: none;
   text-transform: uppercase;
   color: rgba(167, 169, 169, 1);
+  margin-right: 10px;
 }
 .footnav a:hover {
   color: white;
 }
 
 .footbottom {
+  clear: both;
   margin: 0;
   background-color: #000000;
   padding: 2% 0;
@@ -569,107 +609,69 @@ footer {
 /*responsiveness for medium devices*/
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   /*top navigation styling */
-  .navcont {
-    width: 100%;
-  }
-
   .navtop {
     background-color: black;
     padding: 10px;
-    width: 85%;
     font-size: 80%;
-    float: right;
     margin: 0;
     height: 30px;
   }
-  .navlist {
-    display: flex;
-    list-style-type: none;
-  }
-
-  .navlist li {
-    margin-right: 15px;
-  }
-  .navlist a {
-    text-decoration: none;
-    color: #aaa;
-  }
-  .navlist a:hover {
-    color: white;
-  }
-  #whitetext {
-    color: white;
-  }
 
   /*navlogom&s style */
+  .navlogom-m {
+  background: linear-gradient(to bottom right,#c09,#f42 85%);
+  width: 106px;
+  height:60px;
+  text-align: center;
+  padding-top: 30px;
+  display: block;
+  position: absolute;
+  top:0;
+  z-index: 200;
+  }
+  .navlist {
+    margin-left:80px
+  }
+
+
+  .navlogom-m img {
+  width:70%;
+  }
   .navlogom-s {
-    background: linear-gradient(to bottom right, #c09, #f42 85%);
-    width: 12.8%;
-    height: 65px;
-    text-align: center;
-    padding-top: 25px;
-    display: block;
-    float: left;
+  display: block;
   }
   .navlogom-s img {
-    width: 80%;
+  width: 70%;
   }
 
   /*navigation fixed styling */
   .header {
     position: sticky;
-    top: 0;
+    top:0;
     width: 100%;
     z-index: 100;
   }
 
   .navfixed {
-    height: 40px;
-    font-family: "Nova Square", cursive;
-    font-size: 17px;
+    height:40px;
+    font-family: 'Nova Square', cursive;
+    font-size:17px;
     background-color: white;
-    font-size: 90%;
-    float: right;
-    width: 85.8%;
+    font-size:90%;
   }
-  #sideinfologo {
-    width: 125px;
-    height: 54px;
+  .navli2 {
+    margin-left: -60px;
+
   }
 
-  .sideinfo {
-    margin-right: 25px;
-  }
+#searchbtn {
+border-bottom:1px rgba(84, 84, 84, 0.27) solid;
+padding-bottom:10px;
+width:25px;
+padding-left: 15px;
+font-size: 110%;
+}
 
-  .time {
-    margin-right: 20px;
-    font-size: 120%;
-    color: red;
-    font-weight: bold;
-  }
-  .ticket {
-    background-color: #0cc;
-    color: white;
-    width: 90px;
-    height: 30px;
-    font-size: 60%;
-    border: none;
-    border-radius: 3px;
-    font-weight: bold;
-  }
-
-  .ticket:hover {
-    background-color: purple;
-  }
-
-  #searchbtn {
-    transform: rotate(90deg);
-    color: #aaa;
-  }
-
-  .navli2 a:hover {
-    color: black;
-  }
   .hiddenmd {
     display: none;
   }
@@ -682,12 +684,6 @@ footer {
     padding: 5px;
     text-align: center;
     clear: both;
-  }
-  .yellow-nav a {
-    margin-left: 15px;
-    text-decoration: none;
-    color: black;
-    font-size: 15px;
   }
 
   /* main content */
@@ -713,7 +709,6 @@ footer {
     background-repeat: no-repeat;
     grid-area: main;
     padding-bottom: 2%;
-
     padding: 1%;
   }
 
@@ -739,7 +734,7 @@ footer {
   }
   .headline {
     font-family: "Russo One", sans-serif;
-    font-size: 200%;
+    font-size: 150%;
     text-align: justify;
     padding-top: 225px;
   }
@@ -752,7 +747,7 @@ footer {
   }
   .side-headline {
     font-family: "Russo One", sans-serif;
-    font-size: 110%;
+    font-size: 100%;
     text-align: justify;
     padding-top: 125px;
     text-align: left;
@@ -761,9 +756,136 @@ footer {
   .side-pic-content i {
     margin: 0 4px;
   }
+
+/* styling latest news section*/
+  .section-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    grid-gap: 5px;
+    width: 90%;
+  }
+  /* styling latest news section*/
+
+  .newscont {
+    width: 80%;
+    margin: auto;
+  }
+
+  .newsitem {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+  }
+
+  .latest-news {
+    margin-top: 150px;
+  }
+
+  .item a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: "Varela Round", sans-serif;
+    font-weight: bold;
+  }
+
+  .author {
+    font-family: "Varela Round", sans-serif;
+    font-size: 13px;
+    color: grey;
+  }
+
+  .title a {
+    font-family: "Russo One", sans-serif;
+    text-decoration: none;
+    color: #f42;
+    font-size: 28px;
+    font-weight: bolder;
+  }
+
+  .footnav {
+    text-align: center;
+    width: 35%;
+    margin: 2% auto;
+    font-size: 75%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
 }
 /*responsiveness for mobile devices*/
-@media only screen and (min-width: 569px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
+/* navigation small */
+
+.navtop {
+display: none;
+ }
+
+ /*navlogom&s style */
+ .navlogom-s {
+ display: block;
+ width: 85px;
+ height:35px;
+ padding-top: 15px;
+ padding-left: 20px;
+ }
+ .navlogom-s img {
+ width: 70%;
+ }
+
+ .navli2 {
+display: none;
+ }
+
+ /*navigation fixed styling */
+ .header {
+   position: sticky;
+   top:0;
+   width: 100%;
+   z-index: 100;
+ }
+
+ .navfixed {
+   height:50px;
+   font-family: 'Nova Square', cursive;
+   font-size:17px;
+   background-color: white;
+   font-size:90%;
+ }
+ #searchbtn {
+ border-bottom:1px rgba(84, 84, 84, 0.27) solid;
+  border-top:1px rgba(84, 84, 84, 0.27) solid;
+ padding-bottom:10px;
+ padding-left: 15px;
+ padding-top:15px;
+ width:35px;
+font-size: 110%;
+ }
+
+  #hamburger {
+    display: block;
+    color:orangered;
+    margin-left: 10px;
+    font-size: 120%;
+  }
+
+ .hiddenmd {
+   display: none;
+ }
+
+ /*yellow nav styling */
+
+ .yellow-nav {
+   background-color: #ffe712;
+   height: 30px;
+   padding-top:20px;
+   text-align: center;
+   clear: both;
+ }
+
+
   /* main content */
   .main-news-section {
     display: grid;
@@ -823,9 +945,9 @@ footer {
   }
   .headline {
     font-family: "Russo One", sans-serif;
-    font-size: 110%;
+    font-size: 100%;
     text-align: justify;
-    padding-top: 155px;
+    padding-top:100px;
   }
   #br {
     display: none;
@@ -841,98 +963,76 @@ footer {
     font-family: "Russo One", sans-serif;
     font-size: 110%;
     text-align: justify;
-    padding-top: 200px;
+    padding-top: 135px;
     text-align: left;
   }
 
   .side-pic-content i {
     margin: 0 4px;
   }
-}
 
-@media only screen and (max-width: 568px) {
-  /* main content */
-  .main-news-section {
-    display: grid;
-    grid-gap: 6px;
-    grid-template-areas:
-      "main"
-      "side-top"
-      "side-bottom";
-
-    margin: 4px 4px 5% 4px;
+  /* Latesnt news*/
+  .latest-news {
+    margin-top: 350px;
   }
 
-  .main-pic {
-    /* background:  linear-gradient(rgba(196, 32, 32, 0.25)),url("./images/main-pic-big.png"); */
-    background: linear-gradient(
-        180deg,
-        #f42 0%,
-        rgba(68, 152, 217, 0.11528361344537819) 100%
-      ),
-      url("./images/main-pic-big.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    grid-area: main;
-    padding-bottom: 2%;
-    height: 30vh;
-    padding: 1%;
+  .newscont {
+    width: 90%;
+    margin: auto;
   }
 
-  /* Side pic top */
-  .side-pic-top {
-    height: 30vh;
+  .newsitem {
+    display: block;
   }
 
-  /* side pic bottom */
-  .side-pic-bottom {
-    height: 30vh;
-  }
-  /* logo sizing */
-
-  .logo-TNW img {
-    display: none;
-  }
-  .logo-TNW p {
-    display: none;
-  }
-  /* styling the headline texts*/
-
-  .pic-content p,
-  .side-pic-top p,
-  .side-pic-bottom p {
-    color: #fff;
-    margin: 0 0 0 10px;
+  .itemsmall {
+    display: flex;
   }
 
-  .pic-content i {
-    margin: 0 4px;
+  .itemsmall {
+    margin-bottom: 15px;
   }
-  .headline {
-    font-family: "Russo One", sans-serif;
-    font-size: 110%;
-    text-align: justify;
-    padding-top: 130px;
+  .itemsmall img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
   }
-  #br {
-    display: none;
+  .itemsmall h4,p {
+    margin: 3px 0;
   }
-  #br-first {
+
+  .ditem {
+    display: flex;
+  }
+
+  .imgcont img {
+    width: 100px;
+    height: 70px;
+    margin-right:100px;
+  }
+    .dealhead a{
+      font-size: 100%;
+    }
+  .textcontsmall2  {
+    font-size: 90%;
+  }
+  .ptag {
     display: none;
   }
 
-  #spn {
-    display: inline;
-  }
-  .side-headline {
-    font-family: "Russo One", sans-serif;
-    font-size: 110%;
-    text-align: justify;
-    padding-top: 200px;
-    text-align: left;
+/* Latesnt news*/
+  .section-4 {
+    display: block;
+    margin: auto;
+
   }
 
-  .side-pic-content i {
-    margin: 0 4px;
+  .footnav {
+    text-align: center;
+    width: 60%;
+    margin: 2% auto;
+    font-size: 75%;
+    text-align: center;
+    padding-bottom: 20px;
   }
 }
