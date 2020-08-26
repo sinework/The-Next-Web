@@ -24,67 +24,70 @@
     ></script>
   </head>
   <body>
-
-  <div class="navcont">
-    <!--Black navigation for big screen -->
-    <nav class="navtop flexspacebetween">
-      <ul class="navlist">
-        <li><a href="" id="whitetext">News</a></li>
-        <li>
-          <a href="">Events <i class="fas fa-caret-down"></i></a>
-        </li>
-        <li>
-          <a href="">Business <i class="fas fa-caret-down"></i></a>
-        </li>
-        <li><a href="">AMAs</a></li>
-        <li><a href="">Spaces</a></li>
-        <li><a href="">Terms & Conditions</a></li>
-      </ul>
-
-      <ul class="navlist">
-        <li><a href="">About</a></li>
-        <li><a href="">Advertise</a></li>
-        <li><a href="">Jobs</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-    </nav>
-
-      <div class="navlogom-s">
-        <img src="Images/tnw.svg" alt="">
-      </div>
-
-
-    <header class="header">
-      <!--main navigation for all screen -->
-
-      <nav class="navfixed flexspacebetween">
-        <ul class="navlist navli2">
-          <li><a href="#">Latest</a></li>
-          <li><a href="#">Hard Fork</a></li>
-          <li><a href="#">Plugged</a></li>
-          <li><a href="#">ReadMe</a></li>
-          <li><a href="#">Growth Quarters</a></li>
-          <li><a href="#">Shift</a></li>
-          <li><a href="#">Neural</a></li>
+    <div class="navcont">
+      <!--Black navigation for big screen -->
+      <nav class="navtop flexspacebetween">
+        <ul class="navlist">
+          <li><a href="" id="whitetext">News</a></li>
+          <li>
+            <a href="">Events <i class="fas fa-caret-down"></i></a>
+          </li>
+          <li>
+            <a href="">Business <i class="fas fa-caret-down"></i></a>
+          </li>
+          <li><a href="">AMAs</a></li>
+          <li><a href="">Spaces</a></li>
+          <li><a href="">Terms & Conditions</a></li>
         </ul>
 
-        <div class="sideinfo flexcenter">
-          <i class="fas fa-search" id="searchbtn"></i>
-          <img src="Images/event.svg" alt="event" id="sideinfologo" class="hiddenmd" />
-          <span class="time hiddenmd">37:00:35:51</span>
-          <button class="ticket hiddenmd">GET TICKETS</button>
-        </div>
+        <ul class="navlist">
+          <li><a href="">About</a></li>
+          <li><a href="">Advertise</a></li>
+          <li><a href="">Jobs</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
       </nav>
 
-      <!--main navigation for all screen -->
-      <div class="yellow-nav">
-        <a href="#"
-          >Join TNW2020, our 15th annual flagship event. Online. Get tickets
-          <i class="fas fa-long-arrow-alt-right"></i
-        ></a>
+      <div class="navlogom-s">
+        <img src="Images/tnw.svg" alt="" />
       </div>
-    </header>
-</div>
+
+      <header class="header">
+        <!--main navigation for all screen -->
+
+        <nav class="navfixed flexspacebetween">
+          <ul class="navlist navli2">
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">Hard Fork</a></li>
+            <li><a href="#">Plugged</a></li>
+            <li><a href="#">ReadMe</a></li>
+            <li><a href="#">Growth Quarters</a></li>
+            <li><a href="#">Shift</a></li>
+            <li><a href="#">Neural</a></li>
+          </ul>
+
+          <div class="sideinfo flexcenter">
+            <i class="fas fa-search" id="searchbtn"></i>
+            <img
+              src="Images/event.svg"
+              alt="event"
+              id="sideinfologo"
+              class="hiddenmd"
+            />
+            <span class="time hiddenmd">37:00:35:51</span>
+            <button class="ticket hiddenmd">GET TICKETS</button>
+          </div>
+        </nav>
+
+        <!--main navigation for all screen -->
+        <div class="yellow-nav">
+          <a href="#"
+            >Join TNW2020, our 15th annual flagship event. Online. Get tickets
+            <i class="fas fa-long-arrow-alt-right"></i
+          ></a>
+        </div>
+      </header>
+    </div>
     <main>
       <!-- This is the main news section with one big image and two side elements -->
       <section class="main-news-section">
@@ -97,8 +100,8 @@
             </div>
 
             <p class="headline">
-              Two left feet? Facebook’s new AI <br />
-              dance choreographer can teach you <br />
+              Two left feet? Facebook’s new AI <br id="br-first" />
+              dance choreographer can teach you <br id="br" />
               some brand new moves
             </p>
             <p>
@@ -114,7 +117,8 @@
         <div class="side-pic-top">
           <div class="side-pic-content">
             <p class="side-headline">
-              Join our 15th annual flagship event for free
+              Join our 15th annual flagship
+              <span id="spn">event for free </span>
             </p>
           </div>
         </div>
@@ -357,15 +361,72 @@
 
       <!-- this is the fourth section with grid -->
       <section class="section-4">
+        <!-- section for single item with flex -->
+        <div class="section-4-item">
+          <h2>Hard Fork <i class="fas fa-chevron-right"></i></h2>
+
+          <!-- Main pic div -->
+          <div class="sec-4-big-pic-first">
+            <p class="headline-header">MOST POPULAR</p>
+            <a href="#"
+              ><p class="pic-headline">
+                Microsoft once owned a chunk of Apple, here’s what it would have
+                been worth today
+              </p>
+            </a>
+            <p class="view-history">Yaron Yitzhak19 hours ago</p>
+          </div>
+          <!-- second div with flex direction -->
+          <div class="flexed-div">
+            <div class="flexed-desc">
+              <p class="flexed-header">Latest</p>
+              <a href="#">
+                <p>
+                  <strong
+                    >Satoshi Nakaboto: ‘Ryanair CEO believes Bitcoin is a ponzi
+                    scheme’</strong
+                  >
+                </p></a
+              >
+            </div>
+            <div class="flexed-pic"></div>
+          </div>
+          <!-- UL elements -->
+          <div class="ul-news-elements">
+            <ul>
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <!-- section for single item with flex -->
         <div class="section-4-item">
-
-              <h2>Hard Fork  <i class="fas fa-chevron-right"></i> </h2>
-
-
+          <h2>TECH <i class="fas fa-chevron-right"></i></h2>
           <!-- Main pic div -->
-          <div class="sec-4-big-pic-first ">
+          <div class="sec-4-big-pic-second">
             <p class="headline-header">MOST POPULAR</p>
             <a href="#"
               ><p class="pic-headline">
@@ -389,455 +450,518 @@
               >
             </div>
             <div class="flexed-pic">
-
+              <img src="" alt="" />
             </div>
           </div>
           <!-- UL elements -->
           <div class="ul-news-elements">
             <ul>
-              <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-              <hr>
-              <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-              <hr>
-              <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-              <hr>
-              <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-              <hr>
-              <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
             </ul>
           </div>
         </div>
 
-
-       <!-- section for single item with flex -->
-       <div class="section-4-item">
-        <h2>TECH  <i class="fas fa-chevron-right"></i> </h2>
-        <!-- Main pic div -->
-        <div class="sec-4-big-pic-second">
-          <p class="headline-header">MOST POPULAR</p>
-          <a href="#"
-            ><p class="pic-headline">
-              Microsoft once owned a chunk of Apple, here’s what it would have
-              been worth today
-            </p>
-          </a>
-          <p class="view-history">Yaron Yitzhak19 hours ago</p>
+        <!-- section for single item with flex -->
+        <div class="section-4-item">
+          <h2>APPS <i class="fas fa-chevron-right"></i></h2>
+          <!-- Main pic div -->
+          <div class="sec-4-big-pic-third">
+            <p class="headline-header">MOST POPULAR</p>
+            <a href="#"
+              ><p class="pic-headline">
+                Microsoft once owned a chunk of Apple, here’s what it would have
+                been worth today
+              </p>
+            </a>
+            <p class="view-history">Yaron Yitzhak19 hours ago</p>
+          </div>
+          <!-- second div with flex direction -->
+          <div class="flexed-div">
+            <div class="flexed-desc">
+              <p class="flexed-header">Latest</p>
+              <a href="#">
+                <p>
+                  <strong
+                    >Satoshi Nakaboto: ‘Ryanair CEO believes Bitcoin is a ponzi
+                    scheme’</strong
+                  >
+                </p></a
+              >
+            </div>
+            <div class="flexed-pic">
+              <img src="" alt="" />
+            </div>
+          </div>
+          <!-- UL elements -->
+          <div class="ul-news-elements">
+            <ul>
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- second div with flex direction -->
-        <div class="flexed-div">
-          <div class="flexed-desc">
-            <p class="flexed-header">Latest</p>
-            <a href="#">
-              <p>
-                <strong
-                  >Satoshi Nakaboto: ‘Ryanair CEO believes Bitcoin is a ponzi
-                  scheme’</strong
+
+        <!-- Second row -->
+        <!-- section for single item with flex -->
+        <div class="section-4-item">
+          <h2>Hard Fork <i class="fas fa-chevron-right"></i></h2>
+
+          <!-- Main pic div -->
+          <div class="sec-4-big-pic-first">
+            <p class="headline-header">MOST POPULAR</p>
+            <a href="#"
+              ><p class="pic-headline">
+                Microsoft once owned a chunk of Apple, here’s what it would have
+                been worth today
+              </p>
+            </a>
+            <p class="view-history">Yaron Yitzhak19 hours ago</p>
+          </div>
+          <!-- second div with flex direction -->
+          <div class="flexed-div">
+            <div class="flexed-desc">
+              <p class="flexed-header">Latest</p>
+              <a href="#">
+                <p>
+                  <strong
+                    >Satoshi Nakaboto: ‘Ryanair CEO believes Bitcoin is a ponzi
+                    scheme’</strong
+                  >
+                </p></a
+              >
+            </div>
+            <div class="flexed-pic"></div>
+          </div>
+          <!-- UL elements -->
+          <div class="ul-news-elements">
+            <ul>
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- section for single item with flex -->
+        <div class="section-4-item">
+          <h2>TECH <i class="fas fa-chevron-right"></i></h2>
+          <!-- Main pic div -->
+          <div class="sec-4-big-pic-second">
+            <p class="headline-header">MOST POPULAR</p>
+            <a href="#"
+              ><p class="pic-headline">
+                Microsoft once owned a chunk of Apple, here’s what it would have
+                been worth today
+              </p>
+            </a>
+            <p class="view-history">Yaron Yitzhak19 hours ago</p>
+          </div>
+          <!-- second div with flex direction -->
+          <div class="flexed-div">
+            <div class="flexed-desc">
+              <p class="flexed-header">Latest</p>
+              <a href="#">
+                <p>
+                  <strong
+                    >Satoshi Nakaboto: ‘Ryanair CEO believes Bitcoin is a ponzi
+                    scheme’</strong
+                  >
+                </p></a
+              >
+            </div>
+            <div class="flexed-pic">
+              <img src="" alt="" />
+            </div>
+          </div>
+          <!-- UL elements -->
+          <div class="ul-news-elements">
+            <ul>
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- section for single item with flex -->
+        <div class="section-4-item">
+          <h2>APPS <i class="fas fa-chevron-right"></i></h2>
+          <!-- Main pic div -->
+          <div class="sec-4-big-pic-third">
+            <p class="headline-header">MOST POPULAR</p>
+            <a href="#"
+              ><p class="pic-headline">
+                Microsoft once owned a chunk of Apple, here’s what it would have
+                been worth today
+              </p>
+            </a>
+            <p class="view-history">Yaron Yitzhak19 hours ago</p>
+          </div>
+          <!-- second div with flex direction -->
+          <div class="flexed-div">
+            <div class="flexed-desc">
+              <p class="flexed-header">Latest</p>
+              <a href="#">
+                <p>
+                  <strong
+                    >Satoshi Nakaboto: ‘Ryanair CEO believes Bitcoin is a ponzi
+                    scheme’</strong
+                  >
+                </p></a
+              >
+            </div>
+            <div class="flexed-pic">
+              <img src="" alt="" />
+            </div>
+          </div>
+          <!-- UL elements -->
+          <div class="ul-news-elements">
+            <ul>
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Third row -->
+        <!-- section for single item with flex -->
+        <div class="section-4-item">
+          <h2>Hard Fork <i class="fas fa-chevron-right"></i></h2>
+
+          <!-- Main pic div -->
+          <div class="sec-4-big-pic-first">
+            <p class="headline-header">MOST POPULAR</p>
+            <a href="#"
+              ><p class="pic-headline">
+                Microsoft once owned a chunk of Apple, here’s what it would have
+                been worth today
+              </p>
+            </a>
+            <p class="view-history">Yaron Yitzhak19 hours ago</p>
+          </div>
+          <!-- second div with flex direction -->
+          <div class="flexed-div">
+            <div class="flexed-desc">
+              <p class="flexed-header">Latest</p>
+              <a href="#">
+                <p>
+                  <strong
+                    >Satoshi Nakaboto: ‘Ryanair CEO believes Bitcoin is a ponzi
+                    scheme’</strong
+                  >
+                </p></a
+              >
+            </div>
+            <div class="flexed-pic"></div>
+          </div>
+          <!-- UL elements -->
+          <div class="ul-news-elements">
+            <ul>
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- section for single item with flex -->
+        <div class="section-4-item">
+          <h2>TECH <i class="fas fa-chevron-right"></i></h2>
+          <!-- Main pic div -->
+          <div class="sec-4-big-pic-second">
+            <p class="headline-header">MOST POPULAR</p>
+            <a href="#"
+              ><p class="pic-headline">
+                Microsoft once owned a chunk of Apple, here’s what it would have
+                been worth today
+              </p>
+            </a>
+            <p class="view-history">Yaron Yitzhak19 hours ago</p>
+          </div>
+          <!-- second div with flex direction -->
+          <div class="flexed-div">
+            <div class="flexed-desc">
+              <p class="flexed-header">Latest</p>
+              <a href="#">
+                <p>
+                  <strong
+                    >Satoshi Nakaboto: ‘Ryanair CEO believes Bitcoin is a ponzi
+                    scheme’</strong
+                  >
+                </p></a
+              >
+            </div>
+            <div class="flexed-pic">
+              <img src="" alt="" />
+            </div>
+          </div>
+          <!-- UL elements -->
+          <div class="ul-news-elements">
+            <ul>
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- section for single item with flex -->
+        <div class="section-4-item">
+          <h2>APPS <i class="fas fa-chevron-right"></i></h2>
+          <!-- Main pic div -->
+          <div class="sec-4-big-pic-third">
+            <p class="headline-header">MOST POPULAR</p>
+            <a href="#"
+              ><p class="pic-headline">
+                Microsoft once owned a chunk of Apple, here’s what it would have
+                been worth today
+              </p>
+            </a>
+            <p class="view-history">Yaron Yitzhak19 hours ago</p>
+          </div>
+          <!-- second div with flex direction -->
+          <div class="flexed-div">
+            <div class="flexed-desc">
+              <p class="flexed-header">Latest</p>
+              <a href="#">
+                <p>
+                  <strong
+                    >Satoshi Nakaboto: ‘Ryanair CEO believes Bitcoin is a ponzi
+                    scheme’</strong
+                  >
+                </p></a
+              >
+            </div>
+            <div class="flexed-pic">
+              <img src="" alt="" />
+            </div>
+          </div>
+          <!-- UL elements -->
+          <div class="ul-news-elements">
+            <ul>
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+              <hr />
+              <li>
+                Jack Dorsey created a $1B COVID-19 relief fund, now it’s got…
+                $2.6B left?
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- this section is for the latest deals  -->
+
+      <section class="latest-deals">
+        <div class="newscont">
+          <h2 class="title">
+            <a href="">Latest Deals <i class="fas fa-chevron-right"></i></a>
+          </h2>
+
+          <div class="newsitem">
+            <div class="item ditem">
+              <div class="imgcont">
+                <img src="Images/deal1.jpg" alt="deal1" />
+                <h5 class="ptag">90% OFF</h5>
+              </div>
+              <h4 class="dealhead">
+                <a href="#"
+                  >The Complete Salesforce Trailhead 2020: From Zero to Hero
+                  7-Course Bundle</a
                 >
-              </p></a
-            >
-          </div>
-          <div class="flexed-pic">
-            <img src="" alt="" />
-          </div>
-        </div>
-        <!-- UL elements -->
-        <div class="ul-news-elements">
-          <ul>
-            <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-            <hr>
-            <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-            <hr>
-            <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-            <hr>
-            <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-            <hr>
-            <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-          </ul>
-        </div>
-      </div>
-
-
-     <!-- section for single item with flex -->
-     <div class="section-4-item">
-      <h2>APPS  <i class="fas fa-chevron-right"></i> </h2>
-      <!-- Main pic div -->
-      <div class="sec-4-big-pic-third">
-        <p class="headline-header">MOST POPULAR</p>
-        <a href="#"
-          ><p class="pic-headline">
-            Microsoft once owned a chunk of Apple, here’s what it would have
-            been worth today
-          </p>
-        </a>
-        <p class="view-history">Yaron Yitzhak19 hours ago</p>
-      </div>
-      <!-- second div with flex direction -->
-      <div class="flexed-div">
-        <div class="flexed-desc">
-          <p class="flexed-header">Latest</p>
-          <a href="#">
-            <p>
-              <strong
-                >Satoshi Nakaboto: ‘Ryanair CEO believes Bitcoin is a ponzi
-                scheme’</strong
-              >
-            </p></a
-          >
-        </div>
-        <div class="flexed-pic">
-          <img src="" alt="" />
-        </div>
-      </div>
-      <!-- UL elements -->
-      <div class="ul-news-elements">
-        <ul>
-          <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-          <hr>
-          <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-          <hr>
-          <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-          <hr>
-          <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-          <hr>
-          <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Second row -->
-         <!-- section for single item with flex -->
-         <div class="section-4-item">
-
-          <h2>Hard Fork  <i class="fas fa-chevron-right"></i> </h2>
-
-
-      <!-- Main pic div -->
-      <div class="sec-4-big-pic-first">
-        <p class="headline-header">MOST POPULAR</p>
-        <a href="#"
-          ><p class="pic-headline">
-            Microsoft once owned a chunk of Apple, here’s what it would have
-            been worth today
-          </p>
-        </a>
-        <p class="view-history">Yaron Yitzhak19 hours ago</p>
-      </div>
-      <!-- second div with flex direction -->
-      <div class="flexed-div">
-        <div class="flexed-desc">
-          <p class="flexed-header">Latest</p>
-          <a href="#">
-            <p>
-              <strong
-                >Satoshi Nakaboto: ‘Ryanair CEO believes Bitcoin is a ponzi
-                scheme’</strong
-              >
-            </p></a
-          >
-        </div>
-        <div class="flexed-pic">
-
-        </div>
-      </div>
-      <!-- UL elements -->
-      <div class="ul-news-elements">
-        <ul>
-          <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-          <hr>
-          <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-          <hr>
-          <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-          <hr>
-          <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-          <hr>
-          <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-        </ul>
-      </div>
-    </div>
-
-
-   <!-- section for single item with flex -->
-   <div class="section-4-item">
-    <h2>TECH  <i class="fas fa-chevron-right"></i> </h2>
-    <!-- Main pic div -->
-    <div class="sec-4-big-pic-second">
-      <p class="headline-header">MOST POPULAR</p>
-      <a href="#"
-        ><p class="pic-headline">
-          Microsoft once owned a chunk of Apple, here’s what it would have
-          been worth today
-        </p>
-      </a>
-      <p class="view-history">Yaron Yitzhak19 hours ago</p>
-    </div>
-    <!-- second div with flex direction -->
-    <div class="flexed-div">
-      <div class="flexed-desc">
-        <p class="flexed-header">Latest</p>
-        <a href="#">
-          <p>
-            <strong
-              >Satoshi Nakaboto: ‘Ryanair CEO believes Bitcoin is a ponzi
-              scheme’</strong
-            >
-          </p></a
-        >
-      </div>
-      <div class="flexed-pic">
-        <img src="" alt="" />
-      </div>
-    </div>
-    <!-- UL elements -->
-    <div class="ul-news-elements">
-      <ul>
-        <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-        <hr>
-        <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-        <hr>
-        <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-        <hr>
-        <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-        <hr>
-        <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-      </ul>
-    </div>
-  </div>
-
-
- <!-- section for single item with flex -->
- <div class="section-4-item">
-  <h2>APPS  <i class="fas fa-chevron-right"></i> </h2>
-  <!-- Main pic div -->
-  <div class="sec-4-big-pic-third">
-    <p class="headline-header">MOST POPULAR</p>
-    <a href="#"
-      ><p class="pic-headline">
-        Microsoft once owned a chunk of Apple, here’s what it would have
-        been worth today
-      </p>
-    </a>
-    <p class="view-history">Yaron Yitzhak19 hours ago</p>
-  </div>
-  <!-- second div with flex direction -->
-  <div class="flexed-div">
-    <div class="flexed-desc">
-      <p class="flexed-header">Latest</p>
-      <a href="#">
-        <p>
-          <strong
-            >Satoshi Nakaboto: ‘Ryanair CEO believes Bitcoin is a ponzi
-            scheme’</strong
-          >
-        </p></a
-      >
-    </div>
-    <div class="flexed-pic">
-      <img src="" alt="" />
-    </div>
-  </div>
-  <!-- UL elements -->
-  <div class="ul-news-elements">
-    <ul>
-      <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-      <hr>
-      <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-      <hr>
-      <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-      <hr>
-      <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-      <hr>
-      <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-    </ul>
-  </div>
-</div>
-<!-- Third row -->
-     <!-- section for single item with flex -->
-     <div class="section-4-item">
-
-      <h2>Hard Fork  <i class="fas fa-chevron-right"></i> </h2>
-
-
-  <!-- Main pic div -->
-  <div class="sec-4-big-pic-first">
-    <p class="headline-header">MOST POPULAR</p>
-    <a href="#"
-      ><p class="pic-headline">
-        Microsoft once owned a chunk of Apple, here’s what it would have
-        been worth today
-      </p>
-    </a>
-    <p class="view-history">Yaron Yitzhak19 hours ago</p>
-  </div>
-  <!-- second div with flex direction -->
-  <div class="flexed-div">
-    <div class="flexed-desc">
-      <p class="flexed-header">Latest</p>
-      <a href="#">
-        <p>
-          <strong
-            >Satoshi Nakaboto: ‘Ryanair CEO believes Bitcoin is a ponzi
-            scheme’</strong
-          >
-        </p></a
-      >
-    </div>
-    <div class="flexed-pic">
-
-    </div>
-  </div>
-  <!-- UL elements -->
-  <div class="ul-news-elements">
-    <ul>
-      <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-      <hr>
-      <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-      <hr>
-      <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-      <hr>
-      <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-      <hr>
-      <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-    </ul>
-  </div>
-</div>
-
-
-<!-- section for single item with flex -->
-<div class="section-4-item">
-<h2>TECH  <i class="fas fa-chevron-right"></i> </h2>
-<!-- Main pic div -->
-<div class="sec-4-big-pic-second">
-  <p class="headline-header">MOST POPULAR</p>
-  <a href="#"
-    ><p class="pic-headline">
-      Microsoft once owned a chunk of Apple, here’s what it would have
-      been worth today
-    </p>
-  </a>
-  <p class="view-history">Yaron Yitzhak19 hours ago</p>
-</div>
-<!-- second div with flex direction -->
-<div class="flexed-div">
-  <div class="flexed-desc">
-    <p class="flexed-header">Latest</p>
-    <a href="#">
-      <p>
-        <strong
-          >Satoshi Nakaboto: ‘Ryanair CEO believes Bitcoin is a ponzi
-          scheme’</strong
-        >
-      </p></a
-    >
-  </div>
-  <div class="flexed-pic">
-    <img src="" alt="" />
-  </div>
-</div>
-<!-- UL elements -->
-<div class="ul-news-elements">
-  <ul>
-    <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-    <hr>
-    <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-    <hr>
-    <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-    <hr>
-    <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-    <hr>
-    <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-  </ul>
-</div>
-</div>
-
-
-<!-- section for single item with flex -->
-<div class="section-4-item">
-<h2>APPS  <i class="fas fa-chevron-right"></i> </h2>
-<!-- Main pic div -->
-<div class="sec-4-big-pic-third">
-<p class="headline-header">MOST POPULAR</p>
-<a href="#"
-  ><p class="pic-headline">
-    Microsoft once owned a chunk of Apple, here’s what it would have
-    been worth today
-  </p>
-</a>
-<p class="view-history">Yaron Yitzhak19 hours ago</p>
-</div>
-<!-- second div with flex direction -->
-<div class="flexed-div">
-<div class="flexed-desc">
-  <p class="flexed-header">Latest</p>
-  <a href="#">
-    <p>
-      <strong
-        >Satoshi Nakaboto: ‘Ryanair CEO believes Bitcoin is a ponzi
-        scheme’</strong
-      >
-    </p></a
-  >
-</div>
-<div class="flexed-pic">
-  <img src="" alt="" />
-</div>
-</div>
-<!-- UL elements -->
-<div class="ul-news-elements">
-<ul>
-  <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-  <hr>
-  <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-  <hr>
-  <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-  <hr>
-  <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-  <hr>
-  <li>Jack Dorsey created a $1B COVID-19 relief fund, now it’s got… $2.6B left? </li>
-</ul>
-</div>
-</div>
-
-  </section>
-
-  <!-- this section is for the latest deals  -->
-
-  <section class="latest-deals">
-    <div class="newscont">
-      <h2 class="title">
-        <a href="">Latest Deals <i class="fas fa-chevron-right"></i></a>
-      </h2>
-
-      <div class="newsitem">
-
-        <div class="item ditem">
-          <div class="imgcont">
-          <img src="Images/deal1.jpg" alt="deal1" />
-          <h5 class="ptag">90% OFF</h5>
-          </div>
-          <h4 class="dealhead">
-            <a href="#">The Complete Salesforce Trailhead 2020: From Zero to Hero 7-Course Bundle</a>
-          </h4>
-          <p class="dealprice">25$</p>
-        </div>
+              </h4>
+              <p class="dealprice">25$</p>
+            </div>
 
             <div class="item ditem">
-            <div class="imgcont">
-              <img src="Images/deal2.jpg" alt="deal2" />
-              <h5 class="ptag">85% OFF</h5>
+              <div class="imgcont">
+                <img src="Images/deal2.jpg" alt="deal2" />
+                <h5 class="ptag">85% OFF</h5>
               </div>
-            <h4 class="dealhead">
-              <a href="#">AWS Cloud Essentials Course</a>
-            </h4>
-            <p class="dealprice">55$</p>
-          </div>
+              <h4 class="dealhead">
+                <a href="#">AWS Cloud Essentials Course</a>
+              </h4>
+              <p class="dealprice">55$</p>
+            </div>
 
-              <div class="item ditem ">
-                <div class="imgcont">
-                  <img src="Images/deal3.jpg" alt="deal3" />
-                  <h5 class="ptag">95% OFF</h5>
-                  </div>
-                  <h4 class="dealhead">
-                <a href="#">The Complete Salesforce Trailhead 2020: From Zero to Hero 7-Course Bundle</a>
+            <div class="item ditem">
+              <div class="imgcont">
+                <img src="Images/deal3.jpg" alt="deal3" />
+                <h5 class="ptag">95% OFF</h5>
+              </div>
+              <h4 class="dealhead">
+                <a href="#"
+                  >The Complete Salesforce Trailhead 2020: From Zero to Hero
+                  7-Course Bundle</a
+                >
               </h4>
               <p class="dealprice">25$</p>
             </div>
@@ -846,90 +970,91 @@
               <div class="imgcont">
                 <img src="Images/deal4.jpg" alt="deal4" />
                 <h5 class="ptag">85% OFF</h5>
-                </div>
-                <h4 class="dealhead">
-                  <a href="#">AWS Cloud Essentials Course</a>
-                </h4>
-                <p class="dealprice">55$</p>
               </div>
+              <h4 class="dealhead">
+                <a href="#">AWS Cloud Essentials Course</a>
+              </h4>
+              <p class="dealprice">55$</p>
+            </div>
 
-              <div class="item ditem">
-                <div class="imgcont">
-                  <img src="Images/deal5.jpg" alt="deal5" />
-                  <h5 class="ptag">75% OFF</h5>
-                  </div>
-                  <h4 class="dealhead">
-                  <a href="#">The Complete Salesforce Trailhead 2020: From Zero to Hero 7-Course Bundle</a>
-                </h4>
-                <p class="dealprice">25$</p>
+            <div class="item ditem">
+              <div class="imgcont">
+                <img src="Images/deal5.jpg" alt="deal5" />
+                <h5 class="ptag">75% OFF</h5>
               </div>
+              <h4 class="dealhead">
+                <a href="#"
+                  >The Complete Salesforce Trailhead 2020: From Zero to Hero
+                  7-Course Bundle</a
+                >
+              </h4>
+              <p class="dealprice">25$</p>
+            </div>
 
-              <div class="item ditem">
-                <div class="imgcont">
-                  <img src="Images/deal6.jpg" alt="deal6" />
-                  <h5 class="ptag">90% OFF</h5>
-                  </div>
-                  <h4 class="dealhead">
-                  <a href="#">AWS Cloud Essentials Course</a>
-                </h4>
-                <p class="dealprice">55$</p>
+            <div class="item ditem">
+              <div class="imgcont">
+                <img src="Images/deal6.jpg" alt="deal6" />
+                <h5 class="ptag">90% OFF</h5>
               </div>
+              <h4 class="dealhead">
+                <a href="#">AWS Cloud Essentials Course</a>
+              </h4>
+              <p class="dealprice">55$</p>
+            </div>
 
-              <div class="item ditem">
-                <div class="imgcont">
-                  <img src="Images/deal7.jpg" alt="deal7" />
-                  <h5 class="ptag">80% OFF</h5>
-                  </div>
-                  <h4 class="dealhead">
-                  <a href="#">The Complete Salesforce Trailhead 2020: From Zero to Hero 7-Course Bundle</a>
-                </h4>
-                <p class="dealprice">25$</p>
+            <div class="item ditem">
+              <div class="imgcont">
+                <img src="Images/deal7.jpg" alt="deal7" />
+                <h5 class="ptag">80% OFF</h5>
               </div>
+              <h4 class="dealhead">
+                <a href="#"
+                  >The Complete Salesforce Trailhead 2020: From Zero to Hero
+                  7-Course Bundle</a
+                >
+              </h4>
+              <p class="dealprice">25$</p>
+            </div>
 
-              <div class="item ditem">
-                <div class="imgcont">
-                  <img src="Images/deal8.jpg" alt="deal8" />
-                  <h5 class="ptag">95% OFF</h5>
-                  </div>
-                  <h4 class="dealhead">
-                  <a href="#">AWS Cloud Essentials Course</a>
-                </h4>
-                <p class="dealprice">55$</p>
+            <div class="item ditem">
+              <div class="imgcont">
+                <img src="Images/deal8.jpg" alt="deal8" />
+                <h5 class="ptag">95% OFF</h5>
               </div>
-
-      </div>
-    </div>
-  </section>
+              <h4 class="dealhead">
+                <a href="#">AWS Cloud Essentials Course</a>
+              </h4>
+              <p class="dealprice">55$</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- this section is for the footer section -->
 
     <footer>
-    <div class="iconcont">
-      <i class="fab fa-facebook-f ficon"></i>
-      <i class="fab fa-twitter ficon"></i>
-      <i class="fab fa-youtube ficon"></i>
-      <i class="fab fa-instagram ficon"></i>
-      <i class="fab fa-pinterest-p ficon"></i>
-      <i class="fas fa-rss ficon"></i>
-      <i class="fas fa-envelope ficon"></i>
+      <div class="iconcont">
+        <i class="fab fa-facebook-f ficon"></i>
+        <i class="fab fa-twitter ficon"></i>
+        <i class="fab fa-youtube ficon"></i>
+        <i class="fab fa-instagram ficon"></i>
+        <i class="fab fa-pinterest-p ficon"></i>
+        <i class="fas fa-rss ficon"></i>
+        <i class="fas fa-envelope ficon"></i>
+      </div>
 
-    </div>
+      <ul class="footnav">
+        <li><a href="#">Events</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Advertise</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
 
-
-    <ul class="footnav">
-      <li><a href="#">Events</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Advertise</a></li>
-      <li><a href="#">Jobs</a></li>
-      <li><a href="#">Contact</a></li>
-
-    </ul>
-
-    <p class="footbottom"><a href="" >© 2006–2020 The Next Web B.V. Powered by STACKPATH</a></p>
-
-
+      <p class="footbottom">
+        <a href="">© 2006–2020 The Next Web B.V. Powered by STACKPATH</a>
+      </p>
     </footer>
-
   </body>
 </html>

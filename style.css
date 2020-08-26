@@ -5,24 +5,22 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-ul,li {
+ul,
+li {
   margin: 0;
 }
 
 .flexspacebetween {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
 }
 
 .flexcenter {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
 }
-
-/*responsiveness for mobile devices*/
-@media only screen and (max-width:767px) {}
 
 /*styling for large screen */
 /*top navigation styling */
@@ -40,40 +38,40 @@ ul,li {
 }
 .navlist a {
   text-decoration: none;
-  color:#aaa;
+  color: #aaa;
 }
 .navlist a:hover {
-  color:white;
+  color: white;
 }
 #whitetext {
-  color:white;
+  color: white;
 }
 
 /*navlogom&s style */
 .navlogom-s {
-background: linear-gradient(to bottom right,#c09,#f42 85%);
-width: 106px;
-height:55px;
-text-align: center;
-padding-top: 25px;
-display: none;
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  width: 106px;
+  height: 55px;
+  text-align: center;
+  padding-top: 25px;
+  display: none;
 }
 .navlogom-s img {
-width:80%;
+  width: 80%;
 }
 
 /*navigation fixed styling */
 .header {
   position: sticky;
-  top:0;
+  top: 0;
   width: 100%;
   z-index: 100;
 }
 
 .navfixed {
   height: 50px;
-  font-family: 'Nova Square', cursive;
-  font-size:17px;
+  font-family: "Nova Square", cursive;
+  font-size: 17px;
   background-color: white;
 }
 #sideinfologo {
@@ -82,21 +80,21 @@ width:80%;
 }
 
 .sideinfo {
-margin-right: 25px;
+  margin-right: 25px;
 }
 
 .time {
   margin-right: 20px;
   font-size: 120%;
-  color:red;
+  color: red;
   font-weight: bold;
 }
 .ticket {
   background-color: #0cc;
-  color:white;
+  color: white;
   width: 90px;
   height: 30px;
-  font-size:60%;
+  font-size: 60%;
   border: none;
   border-radius: 3px;
   font-weight: bold;
@@ -108,11 +106,11 @@ margin-right: 25px;
 
 #searchbtn {
   transform: rotate(90deg);
-  color:#aaa;
+  color: #aaa;
 }
 
 .navli2 a:hover {
-  color:black;
+  color: black;
 }
 
 /*yellow nav styling */
@@ -125,7 +123,7 @@ margin-right: 25px;
 .yellow-nav a {
   margin-left: 15px;
   text-decoration: none;
-  color:black;
+  color: black;
   font-size: 15px;
 }
 
@@ -133,86 +131,99 @@ margin-right: 25px;
 
 /* styling for making the sections a grid layout */
 
-.main-news-section{
-    display: grid;
-    grid-gap: 6px;
-    grid-template-areas: "main side-top "
-                        "main side-bottom";
-height:50vh;
-margin:4px;
-
+.main-news-section {
+  display: grid;
+  grid-gap: 6px;
+  grid-template-areas:
+    "main side-top "
+    "main side-bottom";
+  height: 50vh;
+  margin: 4px;
 }
 
-.main-pic{
-
-    /* background:  linear-gradient(rgba(196, 32, 32, 0.25)),url("./images/main-pic-big.png"); */
-    background: linear-gradient(180deg, #f42 0%, rgba(68, 152, 217, 0.11528361344537819) 100%), url("./images/main-pic-big.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    grid-area: main;
-    padding-bottom: 2%;
-    padding:1%;
+.main-pic {
+  /* background:  linear-gradient(rgba(196, 32, 32, 0.25)),url("./images/main-pic-big.png"); */
+  background: linear-gradient(
+      180deg,
+      #f42 0%,
+      rgba(68, 152, 217, 0.11528361344537819) 100%
+    ),
+    url("./images/main-pic-big.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: main;
+  padding-bottom: 2%;
+  padding: 1%;
 }
 
-.side-pic-top{
-    background:  linear-gradient(180deg, rgba(27, 112, 186, .5) 0%, rgba(68, 152, 217, 0.11528361344537819) 100%)
-    , url("./images/side-top.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    grid-area: side-top;
-    padding-bottom: 2%;
+.side-pic-top {
+  background: linear-gradient(
+      180deg,
+      rgba(27, 112, 186, 0.5) 0%,
+      rgba(68, 152, 217, 0.11528361344537819) 100%
+    ),
+    url("./images/side-top.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: side-top;
+  padding-bottom: 2%;
 }
 
-.side-pic-bottom{
-    background: linear-gradient(180deg, rgba(27, 112, 186, .5) 0%, rgba(68, 152, 217, 0.11528361344537819) 100%)
-    , url("./images/side-pic.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    grid-area: side-bottom;
-    padding-bottom: 2%;
+.side-pic-bottom {
+  background: linear-gradient(
+      180deg,
+      rgba(27, 112, 186, 0.5) 0%,
+      rgba(68, 152, 217, 0.11528361344537819) 100%
+    ),
+    url("./images/side-pic.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: side-bottom;
+  padding-bottom: 2%;
 }
 
 /* logo sizing */
-.logo-TNW{
-    display: flex;
-    justify-content: space-between;
+.logo-TNW {
+  display: flex;
+  justify-content: space-between;
 }
-.logo-TNW img{
-    width: 412px;
-    height: 100px;
-    margin:20px;
+.logo-TNW img {
+  width: 412px;
+  height: 100px;
+  margin: 20px;
 }
-.logo-TNW p{
-    color:#fff;
-    margin: 20px;
+.logo-TNW p {
+  color: #fff;
+  margin: 20px;
 }
 /* styling the headline texts*/
 
-.pic-content p, .side-pic-top p, .side-pic-bottom p{
-    color: #fff;
-    margin: 0  0 0 20px;
+.pic-content p,
+.side-pic-top p,
+.side-pic-bottom p {
+  color: #fff;
+  margin: 0 0 0 20px;
 }
 
-.pic-content i{
-    margin:0 4px;
+.pic-content i {
+  margin: 0 4px;
 }
-.headline{
-
-     font-family: 'Russo One', sans-serif;
-     font-size:250%;
-     text-align: justify;
-     padding-top: 105px;
-}
-
-.side-headline{
-    font-family: 'Russo One', sans-serif;
-    font-size: 150%;
-    text-align: justify;
-    padding-top: 150px;
+.headline {
+  font-family: "Russo One", sans-serif;
+  font-size: 250%;
+  text-align: justify;
+  padding-top: 105px;
 }
 
-.side-pic-content i{
-    margin:0 4px;
+.side-headline {
+  font-family: "Russo One", sans-serif;
+  font-size: 150%;
+  text-align: justify;
+  padding-top: 150px;
+}
+
+.side-pic-content i {
+  margin: 0 4px;
 }
 
 /* styling latest news section*/
@@ -224,37 +235,36 @@ margin:4px;
 
 .newsitem {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-gap:10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
   justify-content: center;
 }
 
 .latest-news {
-margin-top: 12%;
+  margin-top: 12%;
 }
 
 .item a {
   text-decoration: none;
-  color:black;
+  color: black;
   font-size: 16px;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-weight: bold;
 }
 
 .author {
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 13px;
-  color:grey;
+  color: grey;
 }
 
 .title a {
-    font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   text-decoration: none;
   color: #f42;
   font-size: 28px;
   font-weight: bolder;
 }
-
 
 /* styling latest funding section*/
 .stylehead {
@@ -262,118 +272,135 @@ margin-top: 12%;
 }
 
 .styletitle {
-  background-color:#f42;
+  background-color: #f42;
   margin: 0;
   text-align: center;
   padding: 10px 0;
-  color:white;
-  font-family: 'Varela Round', sans-serif;
+  color: white;
+  font-family: "Varela Round", sans-serif;
   text-shadow: 1px 1px black;
 }
 
 .subheadstyle {
-  background-color: rgba(255,68,34,.08);
+  background-color: rgba(255, 68, 34, 0.08);
   margin: 0;
   text-align: center;
-  padding:5px 0;
+  padding: 5px 0;
 }
-.subheadstyle h4,h5 {
-  margin:0;
+.subheadstyle h4,
+h5 {
+  margin: 0;
 }
 
 .smallicon {
   height: 60px;
   width: 60px;
   position: absolute;
-  top:10px;
-  left:10px;
+  top: 10px;
+  left: 10px;
 }
-.textfoot{
+.textfoot {
   padding-top: 20px;
 }
 
 .textfoot a {
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 12px;
-  color:rgba(36, 36, 36, 0.9)
+  color: rgba(36, 36, 36, 0.9);
 }
 
 .mr {
-  margin-right:5px;
+  margin-right: 5px;
 }
 
 .latest {
-  background-color: #FFFAF8;
+  background-color: #fffaf8;
 }
 
 .underline {
-  background-color:#f42;
+  background-color: #f42;
   height: 1px;
   margin: 10px 0;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .bottomtext {
   font-size: 11px;
   text-align: left;
-  line-height:2;
-  color:rgba(36, 36, 36, 0.5);
+  line-height: 2;
+  color: rgba(36, 36, 36, 0.5);
 }
 
 /* this is the styling for the section for news items */
 
-.section-4{
+.section-4 {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin: auto;
-  grid-gap:5px;
+  grid-gap: 5px;
   width: 80%;
 }
 
 /* Grid item styling. The item container is flexed with direction of column */
 
-.section-4-item{
+.section-4-item {
   display: flex;
   flex-direction: column;
   padding: 10px;
-
 }
-.section-4-item h2{
+.section-4-item h2 {
   color: #ef5350;
-  font-family: 'Russo One', sans-serif;;
-  font-size:120%;
+  font-family: "Russo One", sans-serif;
+  font-size: 120%;
 }
-.sec-4-big-pic-first{
-  background:linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,0.2) 101%),url('./images/apple-1.jpg');
+.sec-4-big-pic-first {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 1) 100%,
+      rgba(0, 0, 0, 0.2) 101%
+    ),
+    url("./images/apple-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  width:340px;
+  width: 340px;
   height: 276px;
-
 }
-.sec-4-big-pic-first a{
+.sec-4-big-pic-first a {
   text-decoration: none;
 }
-.sec-4-big-pic-second{
-  background:linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,0.2) 101%),url('./images/second.jpg');
+.sec-4-big-pic-second {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 1) 100%,
+      rgba(0, 0, 0, 0.2) 101%
+    ),
+    url("./images/second.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  width:340px;
+  width: 340px;
   height: 276px;
 }
 
-.sec-4-big-pic-second a{
+.sec-4-big-pic-second a {
   text-decoration: none;
 }
 
-.sec-4-big-pic-third{
-  background:linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,0.2) 101%),url('./images/third.jpg');
+.sec-4-big-pic-third {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 1) 100%,
+      rgba(0, 0, 0, 0.2) 101%
+    ),
+    url("./images/third.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  width:340px;
+  width: 340px;
   height: 276px;
 }
-.sec-4-big-pic-third a{
+.sec-4-big-pic-third a {
   text-decoration: none;
 }
 /* .sec-4-big-pic p{
@@ -381,77 +408,75 @@ margin-top: 12%;
   padding-top: 50px;
 } */
 
-.headline-header{
+.headline-header {
   padding: 150px 0 0 20px;
   color: #fff;
-  font-family: 'Varela Round', sans-serif;
-  margin:0;
-  font-size:85%;
+  font-family: "Varela Round", sans-serif;
+  margin: 0;
+  font-size: 85%;
 }
 
-.pic-headline{
+.pic-headline {
   color: #fff;
   font-weight: bold;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 105%;
   padding: 0 0 0 20px;
-  margin:5px 0;
+  margin: 5px 0;
 }
-.view-history{
+.view-history {
   color: #fff;
   margin: 0;
   padding: 0 0 0 20px;
-  font-family: 'Varela Round', sans-serif;
-  font-size:75%;
+  font-family: "Varela Round", sans-serif;
+  font-size: 75%;
 }
-
 
 /* div with flex rows */
-.flexed-div{
+.flexed-div {
   display: flex;
-  background-color:#fce4ec;
-
-
+  background-color: #fce4ec;
 }
-.flexed-desc{
+.flexed-desc {
   width: 80%;
 }
-.flexed-desc a{
+.flexed-desc a {
   text-decoration: none;
 }
-.flexed-header{
+.flexed-header {
   padding-top: 15px;
 }
 
-.flexed-desc p{
+.flexed-desc p {
   color: #ef5350;
   padding-left: 5px;
   margin: 1px;
-  font-family:'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
 }
 
-.flexed-pic{
-  background-image: url('./images/bit.jpg');
+.flexed-pic {
+  background-image: url("./images/bit.jpg");
   width: 96px;
   height: 96px;
 }
 /* ul elements containing div */
-.ul-news-elements{
+.ul-news-elements {
   padding: 20px 10px;
 
   /* background-color:#fff7f8; */
 }
-.ul-news-elements li, .ul-news-elements ul{
+.ul-news-elements li,
+.ul-news-elements ul {
   margin-left: 0;
   padding-left: 5px;
-  font-family:'Varela Round', sans-serif ;
+  font-family: "Varela Round", sans-serif;
   font-size: 12px;
   color: grey;
-
 }
 /* styling latest deal section*/
 
-.dealhead,.dealprice {
+.dealhead,
+.dealprice {
   margin: 5px 0;
 }
 .ditem img {
@@ -468,25 +493,24 @@ margin-top: 12%;
 }
 
 .ptag {
-position: absolute;
-top:-20px;
-right:-110px;
-transform: rotate(45deg);
-background-color:#ffe712;
-height:25px;
-width: 250px;
-padding-top:50px;
-text-align: center;
-font-size: 90%;
-font-family:'Varela Round', sans-serif ;
+  position: absolute;
+  top: -20px;
+  right: -110px;
+  transform: rotate(45deg);
+  background-color: #ffe712;
+  height: 25px;
+  width: 250px;
+  padding-top: 50px;
+  text-align: center;
+  font-size: 90%;
+  font-family: "Varela Round", sans-serif;
 }
 
 /* styling for footer section*/
 
 footer {
-  background-color:#1a1a1a;
-  padding:2% 0 0 0 ;
-
+  background-color: #1a1a1a;
+  padding: 2% 0 0 0;
 }
 .iconcont {
   text-align: center;
@@ -495,7 +519,7 @@ footer {
 }
 
 .ficon {
-  color:white;
+  color: white;
   margin: 5px 10px;
   font-size: 120%;
   background-color: #333;
@@ -505,7 +529,7 @@ footer {
 }
 
 .ficon:hover {
-  background-color:black;
+  background-color: black;
   border: 2px solid grey;
 }
 
@@ -514,7 +538,7 @@ footer {
   justify-content: space-around;
   display: flex;
   margin: 2% auto;
-  font-size:75%;
+  font-size: 75%;
   text-align: center;
 }
 .footnav li {
@@ -524,38 +548,37 @@ footer {
 .footnav a {
   text-decoration: none;
   text-transform: uppercase;
-  color:rgba(167, 169, 169, 1);
+  color: rgba(167, 169, 169, 1);
 }
 .footnav a:hover {
-  color:white;
+  color: white;
 }
 
 .footbottom {
   margin: 0;
-  background-color:#000000;
+  background-color: #000000;
   padding: 2% 0;
   text-align: center;
-
 }
 
 .footbottom a {
   text-decoration: none;
-  color:rgba(167, 169, 169, 1);
+  color: rgba(167, 169, 169, 1);
 }
 
 /*responsiveness for medium devices*/
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   /*top navigation styling */
-    .navcont {
+  .navcont {
     width: 100%;
-    }
+  }
 
   .navtop {
     background-color: black;
     padding: 10px;
-    width:85%;
+    width: 85%;
     font-size: 80%;
-    float:right;
+    float: right;
     margin: 0;
     height: 30px;
   }
@@ -569,45 +592,45 @@ footer {
   }
   .navlist a {
     text-decoration: none;
-    color:#aaa;
+    color: #aaa;
   }
   .navlist a:hover {
-    color:white;
+    color: white;
   }
   #whitetext {
-    color:white;
+    color: white;
   }
 
   /*navlogom&s style */
   .navlogom-s {
-  background: linear-gradient(to bottom right,#c09,#f42 85%);
-  width:12.8%;
-  height:65px;
-  text-align: center;
-  padding-top: 25px;
-  display: block;
-  float: left;
+    background: linear-gradient(to bottom right, #c09, #f42 85%);
+    width: 12.8%;
+    height: 65px;
+    text-align: center;
+    padding-top: 25px;
+    display: block;
+    float: left;
   }
   .navlogom-s img {
-  width:80%;
+    width: 80%;
   }
 
   /*navigation fixed styling */
   .header {
     position: sticky;
-    top:0;
+    top: 0;
     width: 100%;
     z-index: 100;
   }
 
   .navfixed {
-    height:40px;
-    font-family: 'Nova Square', cursive;
-    font-size:17px;
+    height: 40px;
+    font-family: "Nova Square", cursive;
+    font-size: 17px;
     background-color: white;
-    font-size:90%;
+    font-size: 90%;
     float: right;
-    width:85.8%;
+    width: 85.8%;
   }
   #sideinfologo {
     width: 125px;
@@ -615,21 +638,21 @@ footer {
   }
 
   .sideinfo {
-  margin-right: 25px;
+    margin-right: 25px;
   }
 
   .time {
     margin-right: 20px;
     font-size: 120%;
-    color:red;
+    color: red;
     font-weight: bold;
   }
   .ticket {
     background-color: #0cc;
-    color:white;
+    color: white;
     width: 90px;
     height: 30px;
-    font-size:60%;
+    font-size: 60%;
     border: none;
     border-radius: 3px;
     font-weight: bold;
@@ -641,11 +664,11 @@ footer {
 
   #searchbtn {
     transform: rotate(90deg);
-    color:#aaa;
+    color: #aaa;
   }
 
   .navli2 a:hover {
-    color:black;
+    color: black;
   }
   .hiddenmd {
     display: none;
@@ -663,8 +686,253 @@ footer {
   .yellow-nav a {
     margin-left: 15px;
     text-decoration: none;
-    color:black;
+    color: black;
     font-size: 15px;
   }
 
+  /* main content */
+  .main-news-section {
+    display: grid;
+    grid-gap: 6px;
+    grid-template-areas:
+      "main side-top "
+      "main side-bottom";
+    height: 50vh;
+    margin: 4px 4px 5% 4px;
+  }
+
+  .main-pic {
+    /* background:  linear-gradient(rgba(196, 32, 32, 0.25)),url("./images/main-pic-big.png"); */
+    background: linear-gradient(
+        180deg,
+        #f42 0%,
+        rgba(68, 152, 217, 0.11528361344537819) 100%
+      ),
+      url("./images/main-pic-big.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: main;
+    padding-bottom: 2%;
+
+    padding: 1%;
+  }
+
+  /* logo sizing */
+
+  .logo-TNW img {
+    display: none;
+  }
+  .logo-TNW p {
+    display: none;
+  }
+  /* styling the headline texts*/
+
+  .pic-content p,
+  .side-pic-top p,
+  .side-pic-bottom p {
+    color: #fff;
+    margin: 0 0 0 10px;
+  }
+
+  .pic-content i {
+    margin: 0 4px;
+  }
+  .headline {
+    font-family: "Russo One", sans-serif;
+    font-size: 200%;
+    text-align: justify;
+    padding-top: 225px;
+  }
+  #br {
+    display: none;
+  }
+
+  #spn {
+    display: block;
+  }
+  .side-headline {
+    font-family: "Russo One", sans-serif;
+    font-size: 110%;
+    text-align: justify;
+    padding-top: 125px;
+    text-align: left;
+  }
+
+  .side-pic-content i {
+    margin: 0 4px;
+  }
+}
+/*responsiveness for mobile devices*/
+@media only screen and (min-width: 569px) and (max-width: 767px) {
+  /* main content */
+  .main-news-section {
+    display: grid;
+    grid-gap: 6px;
+    grid-template-areas:
+      "main"
+      "side-top"
+      "side-bottom";
+
+    margin: 4px 4px 5% 4px;
+  }
+
+  .main-pic {
+    /* background:  linear-gradient(rgba(196, 32, 32, 0.25)),url("./images/main-pic-big.png"); */
+    background: linear-gradient(
+        180deg,
+        #f42 0%,
+        rgba(68, 152, 217, 0.11528361344537819) 100%
+      ),
+      url("./images/main-pic-big.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: main;
+    padding-bottom: 2%;
+    height: 30vh;
+    padding: 1%;
+  }
+
+  /* Side pic top */
+  .side-pic-top {
+    height: 30vh;
+  }
+
+  /* side pic bottom */
+  .side-pic-bottom {
+    height: 30vh;
+  }
+  /* logo sizing */
+
+  .logo-TNW img {
+    display: none;
+  }
+  .logo-TNW p {
+    display: none;
+  }
+  /* styling the headline texts*/
+
+  .pic-content p,
+  .side-pic-top p,
+  .side-pic-bottom p {
+    color: #fff;
+    margin: 0 0 0 10px;
+  }
+
+  .pic-content i {
+    margin: 0 4px;
+  }
+  .headline {
+    font-family: "Russo One", sans-serif;
+    font-size: 110%;
+    text-align: justify;
+    padding-top: 155px;
+  }
+  #br {
+    display: none;
+  }
+  #br-first {
+    display: none;
+  }
+
+  #spn {
+    display: inline;
+  }
+  .side-headline {
+    font-family: "Russo One", sans-serif;
+    font-size: 110%;
+    text-align: justify;
+    padding-top: 200px;
+    text-align: left;
+  }
+
+  .side-pic-content i {
+    margin: 0 4px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  /* main content */
+  .main-news-section {
+    display: grid;
+    grid-gap: 6px;
+    grid-template-areas:
+      "main"
+      "side-top"
+      "side-bottom";
+
+    margin: 4px 4px 5% 4px;
+  }
+
+  .main-pic {
+    /* background:  linear-gradient(rgba(196, 32, 32, 0.25)),url("./images/main-pic-big.png"); */
+    background: linear-gradient(
+        180deg,
+        #f42 0%,
+        rgba(68, 152, 217, 0.11528361344537819) 100%
+      ),
+      url("./images/main-pic-big.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: main;
+    padding-bottom: 2%;
+    height: 30vh;
+    padding: 1%;
+  }
+
+  /* Side pic top */
+  .side-pic-top {
+    height: 30vh;
+  }
+
+  /* side pic bottom */
+  .side-pic-bottom {
+    height: 30vh;
+  }
+  /* logo sizing */
+
+  .logo-TNW img {
+    display: none;
+  }
+  .logo-TNW p {
+    display: none;
+  }
+  /* styling the headline texts*/
+
+  .pic-content p,
+  .side-pic-top p,
+  .side-pic-bottom p {
+    color: #fff;
+    margin: 0 0 0 10px;
+  }
+
+  .pic-content i {
+    margin: 0 4px;
+  }
+  .headline {
+    font-family: "Russo One", sans-serif;
+    font-size: 110%;
+    text-align: justify;
+    padding-top: 130px;
+  }
+  #br {
+    display: none;
+  }
+  #br-first {
+    display: none;
+  }
+
+  #spn {
+    display: inline;
+  }
+  .side-headline {
+    font-family: "Russo One", sans-serif;
+    font-size: 110%;
+    text-align: justify;
+    padding-top: 200px;
+    text-align: left;
+  }
+
+  .side-pic-content i {
+    margin: 0 4px;
+  }
 }
