@@ -310,3 +310,131 @@ margin-top: 12%;
   line-height:2;
   color:rgba(36, 36, 36, 0.5);
 }
+
+/* this is the styling for the section for news items */
+
+.section-4{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: auto;
+  grid-gap: 5px;
+  width: 80%;
+}
+
+/* Grid item styling. The item container is flexed with direction of column */
+
+.section-4-item{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  
+}
+.section-4-item h2{
+  color: #ef5350;
+  font-family: 'Russo One', sans-serif;;
+  font-size: 22px;
+}
+.sec-4-big-pic-first{
+  background:linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,0.2) 101%),url('./images/apple-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:368px;
+  height: 276px;
+
+}
+.sec-4-big-pic-first a{
+  text-decoration: none;
+}
+.sec-4-big-pic-second{
+  background:linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,0.2) 101%),url('./images/second.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:368px;
+  height: 276px;
+}
+
+.sec-4-big-pic-second a{
+  text-decoration: none;
+}
+
+.sec-4-big-pic-third{
+  background:linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,0.2) 101%),url('./images/third.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:368px;
+  height: 276px;
+}
+.sec-4-big-pic-third a{
+  text-decoration: none;
+}
+/* .sec-4-big-pic p{
+  color: #fff;
+  padding-top: 50px;
+} */
+
+.headline-header{
+  padding: 150px 0 0 20px;
+  color: #fff;
+  font-family: 'Varela Round', sans-serif;
+  margin:0;
+}
+
+.pic-headline{
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 20px;
+  padding: 0 0 0 20px;
+  margin:5px 0;
+}
+.view-history{
+  color: #fff;
+  margin: 0;
+  padding: 0 0 0 20px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+
+/* div with flex rows */
+.flexed-div{
+  display: flex;
+  background-color:#fce4ec;
+  
+
+}
+.flexed-desc{
+  width: 80%;
+}
+.flexed-desc a{
+  text-decoration: none;
+} 
+.flexed-header{
+  padding-top: 15px;
+}
+
+.flexed-desc p{
+  color: #ef5350;
+  padding-left: 5px;
+  margin: 1px;
+  font-family:'Varela Round', sans-serif;
+}
+
+.flexed-pic{
+  background-image: url('./images/bit.jpg');
+  width: 96px;
+  height: 96px;
+}
+/* ul elements containing div */
+.ul-news-elements{
+  padding: 20px 10px;
+  
+  /* background-color:#fff7f8; */
+}
+.ul-news-elements li, .ul-news-elements ul{
+  margin-left: 0;
+  padding-left: 5px;
+  font-family:'Varela Round', sans-serif ;
+  font-size: 12px;
+  color: grey;
+  
+}
