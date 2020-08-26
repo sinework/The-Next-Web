@@ -16,7 +16,7 @@ CSS
 Atom editor, Visual code
 
 <h2>Live Demo</h2>
-https://the-next-web-replica.netlify.app/
+https://sinework.github.io/The-Next-Web/
 
 <h2>Getting Started</h2>
 To get a local copy up and running follow these simple example steps.
