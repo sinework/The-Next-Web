@@ -23,12 +23,8 @@ ul,li {
 
 /*responsiveness for mobile devices*/
 @media only screen and (max-width:767px) {}
-/*responsiveness for medium devices*/
-@media only screen and (max-width: 1023px) and (min-width: 768px) {}
 
 /*styling for large screen */
-
-
 /*top navigation styling */
 .navtop {
   background-color: black;
@@ -51,6 +47,19 @@ ul,li {
 }
 #whitetext {
   color:white;
+}
+
+/*navlogom&s style */
+.navlogom-s {
+background: linear-gradient(to bottom right,#c09,#f42 85%);
+width: 106px;
+height:55px;
+text-align: center;
+padding-top: 25px;
+display: none;
+}
+.navlogom-s img {
+width:80%;
 }
 
 /*navigation fixed styling */
@@ -317,7 +326,7 @@ margin-top: 12%;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   margin: auto;
-  grid-gap: 5px;
+  grid-gap:5px;
   width: 80%;
 }
 
@@ -326,19 +335,19 @@ margin-top: 12%;
 .section-4-item{
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  
+  padding: 10px;
+
 }
 .section-4-item h2{
   color: #ef5350;
   font-family: 'Russo One', sans-serif;;
-  font-size: 22px;
+  font-size:120%;
 }
 .sec-4-big-pic-first{
   background:linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,0.2) 101%),url('./images/apple-1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  width:368px;
+  width:340px;
   height: 276px;
 
 }
@@ -349,7 +358,7 @@ margin-top: 12%;
   background:linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,0.2) 101%),url('./images/second.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  width:368px;
+  width:340px;
   height: 276px;
 }
 
@@ -361,7 +370,7 @@ margin-top: 12%;
   background:linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,0.2) 101%),url('./images/third.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  width:368px;
+  width:340px;
   height: 276px;
 }
 .sec-4-big-pic-third a{
@@ -377,13 +386,14 @@ margin-top: 12%;
   color: #fff;
   font-family: 'Varela Round', sans-serif;
   margin:0;
+  font-size:85%;
 }
 
 .pic-headline{
   color: #fff;
   font-weight: bold;
   font-family: 'Varela Round', sans-serif;
-  font-size: 20px;
+  font-size: 105%;
   padding: 0 0 0 20px;
   margin:5px 0;
 }
@@ -392,6 +402,7 @@ margin-top: 12%;
   margin: 0;
   padding: 0 0 0 20px;
   font-family: 'Varela Round', sans-serif;
+  font-size:75%;
 }
 
 
@@ -399,7 +410,7 @@ margin-top: 12%;
 .flexed-div{
   display: flex;
   background-color:#fce4ec;
-  
+
 
 }
 .flexed-desc{
@@ -407,7 +418,7 @@ margin-top: 12%;
 }
 .flexed-desc a{
   text-decoration: none;
-} 
+}
 .flexed-header{
   padding-top: 15px;
 }
@@ -427,7 +438,7 @@ margin-top: 12%;
 /* ul elements containing div */
 .ul-news-elements{
   padding: 20px 10px;
-  
+
   /* background-color:#fff7f8; */
 }
 .ul-news-elements li, .ul-news-elements ul{
@@ -436,5 +447,224 @@ margin-top: 12%;
   font-family:'Varela Round', sans-serif ;
   font-size: 12px;
   color: grey;
-  
+
+}
+/* styling latest deal section*/
+
+.dealhead,.dealprice {
+  margin: 5px 0;
+}
+.ditem img {
+  width: 270px;
+  height: 200px;
+}
+
+.ditem {
+  margin-bottom: 20px;
+}
+.imgcont {
+  position: relative;
+  overflow: hidden;
+}
+
+.ptag {
+position: absolute;
+top:-20px;
+right:-110px;
+transform: rotate(45deg);
+background-color:#ffe712;
+height:25px;
+width: 250px;
+padding-top:50px;
+text-align: center;
+font-size: 90%;
+font-family:'Varela Round', sans-serif ;
+}
+
+/* styling for footer section*/
+
+footer {
+  background-color:#1a1a1a;
+  padding:2% 0 0 0 ;
+
+}
+.iconcont {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.ficon {
+  color:white;
+  margin: 5px 10px;
+  font-size: 120%;
+  background-color: #333;
+  padding: 12px;
+  border-radius: 50%;
+  border: 2px solid #333;
+}
+
+.ficon:hover {
+  background-color:black;
+  border: 2px solid grey;
+}
+
+.footnav {
+  width: 25%;
+  justify-content: space-around;
+  display: flex;
+  margin: 2% auto;
+  font-size:75%;
+  text-align: center;
+}
+.footnav li {
+  list-style-type: none;
+}
+
+.footnav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color:rgba(167, 169, 169, 1);
+}
+.footnav a:hover {
+  color:white;
+}
+
+.footbottom {
+  margin: 0;
+  background-color:#000000;
+  padding: 2% 0;
+  text-align: center;
+
+}
+
+.footbottom a {
+  text-decoration: none;
+  color:rgba(167, 169, 169, 1);
+}
+
+/*responsiveness for medium devices*/
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  /*top navigation styling */
+    .navcont {
+    width: 100%;
+    }
+
+  .navtop {
+    background-color: black;
+    padding: 10px;
+    width:85%;
+    font-size: 80%;
+    float:right;
+    margin: 0;
+    height: 30px;
+  }
+  .navlist {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .navlist li {
+    margin-right: 15px;
+  }
+  .navlist a {
+    text-decoration: none;
+    color:#aaa;
+  }
+  .navlist a:hover {
+    color:white;
+  }
+  #whitetext {
+    color:white;
+  }
+
+  /*navlogom&s style */
+  .navlogom-s {
+  background: linear-gradient(to bottom right,#c09,#f42 85%);
+  width:12.8%;
+  height:65px;
+  text-align: center;
+  padding-top: 25px;
+  display: block;
+  float: left;
+  }
+  .navlogom-s img {
+  width:80%;
+  }
+
+  /*navigation fixed styling */
+  .header {
+    position: sticky;
+    top:0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .navfixed {
+    height:40px;
+    font-family: 'Nova Square', cursive;
+    font-size:17px;
+    background-color: white;
+    font-size:90%;
+    float: right;
+    width:85.8%;
+  }
+  #sideinfologo {
+    width: 125px;
+    height: 54px;
+  }
+
+  .sideinfo {
+  margin-right: 25px;
+  }
+
+  .time {
+    margin-right: 20px;
+    font-size: 120%;
+    color:red;
+    font-weight: bold;
+  }
+  .ticket {
+    background-color: #0cc;
+    color:white;
+    width: 90px;
+    height: 30px;
+    font-size:60%;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+  }
+
+  .ticket:hover {
+    background-color: purple;
+  }
+
+  #searchbtn {
+    transform: rotate(90deg);
+    color:#aaa;
+  }
+
+  .navli2 a:hover {
+    color:black;
+  }
+  .hiddenmd {
+    display: none;
+  }
+
+  /*yellow nav styling */
+
+  .yellow-nav {
+    background-color: #ffe712;
+    height: 20px;
+    padding: 5px;
+    text-align: center;
+    clear: both;
+  }
+  .yellow-nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color:black;
+    font-size: 15px;
+  }
+
 }
