@@ -229,8 +229,7 @@ li {
 
 .main-pic {
   /* background:  linear-gradient(rgba(196, 32, 32, 0.25)),url("./images/main-pic-big.png"); */
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180deg,
       #f42 0%,
       rgba(68, 152, 217, 0.11528361344537819) 100%
@@ -243,8 +242,7 @@ li {
 }
 
 .side-pic-top {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180deg,
       rgba(27, 112, 186, 0.5) 0%,
       rgba(68, 152, 217, 0.11528361344537819) 100%
@@ -257,8 +255,7 @@ li {
 }
 
 .side-pic-bottom {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180deg,
       rgba(27, 112, 186, 0.5) 0%,
       rgba(68, 152, 217, 0.11528361344537819) 100%
@@ -277,7 +274,7 @@ li {
 }
 
 .logo-TNW img {
-  width: 412px;
+  width: 410px;
   height: 100px;
   margin: 20px;
 }
@@ -436,8 +433,7 @@ h5 {
 }
 
 .sec-4-big-pic-first {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.1) 0%,
       rgba(0, 0, 0, 1) 100%,
@@ -451,8 +447,7 @@ h5 {
 }
 
 .sec-4-big-pic-second {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.1) 0%,
       rgba(0, 0, 0, 1) 100%,
@@ -466,8 +461,7 @@ h5 {
 }
 
 .sec-4-big-pic-third {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.1) 0%,
       rgba(0, 0, 0, 1) 100%,
@@ -736,8 +730,7 @@ footer {
 
   .main-pic {
     /* background:  linear-gradient(rgba(196, 32, 32, 0.25)),url("./images/main-pic-big.png"); */
-    background:
-      linear-gradient(
+    background: linear-gradient(
         180deg,
         #f42 0%,
         rgba(68, 152, 217, 0.11528361344537819) 100%
@@ -940,8 +933,7 @@ footer {
 
   .main-pic {
     /* background:  linear-gradient(rgba(196, 32, 32, 0.25)),url("./images/main-pic-big.png"); */
-    background:
-      linear-gradient(
+    background: linear-gradient(
         180deg,
         #f42 0%,
         rgba(68, 152, 217, 0.11528361344537819) 100%
