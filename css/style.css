@@ -102,7 +102,6 @@ li {
 
 .titleholder {
   margin-right: auto;
-
 }
 
 .title-side {
@@ -554,7 +553,7 @@ h5 {
 
 .flexed-pic {
   background-image: url("../images/bit.jpg");
-  width: 96px;
+  width: 130px;
   height: 96px;
 }
 
@@ -677,6 +676,7 @@ footer {
   padding: 2% 0;
   text-align: center;
 }
+
 #tnwfooter {
   width: 50px;
   height: 25px;
@@ -689,12 +689,13 @@ footer {
   .navtop {
     background-color: black;
     padding: 10px;
-    font-size:78%;
+    font-size: 78%;
     margin: 0;
     height: 30px;
   }
+
   .navlist li {
-    margin-right:5px;
+    margin-right: 5px;
   }
 
   /* navlogom&s style */
@@ -1097,7 +1098,7 @@ footer {
   .itemsmall img {
     width: 70px;
     height: 70px;
-    margin-right:15px;
+    margin-right: 15px;
   }
 
   .itemsmall h4,
@@ -1108,7 +1109,7 @@ footer {
   .imgcont img {
     width: 100px;
     height: 70px;
-    margin-right:50px;
+    margin-right: 50px;
   }
 
   .dealhead a {
