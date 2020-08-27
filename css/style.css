@@ -89,6 +89,33 @@ li {
   font-weight: bolder;
 }
 
+.titleandlinks {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: baseline;
+}
+
+.titleholder {
+  margin-right: auto;
+}
+
+.title-side {
+  margin: 0 6px;
+}
+
+.p-holder {
+  display: flex;
+}
+
+.a-side {
+  text-decoration: none;
+  border-right: 1px solid gray;
+  padding-right: 3px;
+  font-family: "Russo One", sans-serif;
+  color: #f42;
+}
+
 .item a {
   text-decoration: none;
   color: black;
@@ -228,8 +255,8 @@ li {
 }
 
 .main-pic {
-  /* background:  linear-gradient(rgba(196, 32, 32, 0.25)),url("./images/main-pic-big.png"); */
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       #f42 0%,
       rgba(68, 152, 217, 0.11528361344537819) 100%
@@ -242,7 +269,8 @@ li {
 }
 
 .side-pic-top {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(27, 112, 186, 0.5) 0%,
       rgba(68, 152, 217, 0.11528361344537819) 100%
@@ -255,7 +283,8 @@ li {
 }
 
 .side-pic-bottom {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(27, 112, 186, 0.5) 0%,
       rgba(68, 152, 217, 0.11528361344537819) 100%
@@ -355,8 +384,8 @@ li {
 .styletitle {
   background-color: #f42;
   margin: 0;
-  text-align: center;
-  padding: 10px 0;
+  text-align: left;
+  padding: 10px 0 10px 80px;
   color: white;
   font-family: "Varela Round", sans-serif;
   text-shadow: 1px 1px black;
@@ -365,8 +394,8 @@ li {
 .subheadstyle {
   background-color: rgba(255, 68, 34, 0.08);
   margin: 0;
-  text-align: center;
-  padding: 5px 0;
+  text-align: left;
+  padding: 5px 0 5px 80px;
 }
 
 .subheadstyle h4,
@@ -433,7 +462,8 @@ h5 {
 }
 
 .sec-4-big-pic-first {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.1) 0%,
       rgba(0, 0, 0, 1) 100%,
@@ -447,7 +477,8 @@ h5 {
 }
 
 .sec-4-big-pic-second {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.1) 0%,
       rgba(0, 0, 0, 1) 100%,
@@ -461,7 +492,8 @@ h5 {
 }
 
 .sec-4-big-pic-third {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.1) 0%,
       rgba(0, 0, 0, 1) 100%,
@@ -521,7 +553,7 @@ h5 {
 }
 
 .flexed-pic {
-  background-image: url("./images/bit.jpg");
+  background-image: url("../images/bit.jpg");
   width: 96px;
   height: 96px;
 }
@@ -533,9 +565,20 @@ h5 {
   /* background-color:#fff7f8; */
 }
 
-.ul-news-elements li,
+.ul-news-elements li {
+  margin-left: 0;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-top: 5px;
+  border-bottom: 1px solid gray;
+  font-family: "Varela Round", sans-serif;
+  font-size: 12px;
+  color: grey;
+}
+
 .ul-news-elements ul {
   margin-left: 0;
+  padding-bottom: 10px;
   padding-left: 5px;
   font-family: "Varela Round", sans-serif;
   font-size: 12px;
@@ -712,8 +755,7 @@ footer {
   .yellow-nav {
     background-color: #ffe712;
     height: 20px;
-    padding: 5px;
-    text-align: center;
+    padding: 5px 5px 5px 105px;
     clear: both;
   }
 
@@ -730,12 +772,13 @@ footer {
 
   .main-pic {
     /* background:  linear-gradient(rgba(196, 32, 32, 0.25)),url("./images/main-pic-big.png"); */
-    background: linear-gradient(
+    background:
+      linear-gradient(
         180deg,
         #f42 0%,
         rgba(68, 152, 217, 0.11528361344537819) 100%
       ),
-      url("./images/main-pic-big.png");
+      url("../images/main-pic-big.png");
     background-size: cover;
     background-repeat: no-repeat;
     grid-area: main;
@@ -840,6 +883,12 @@ footer {
     font-weight: bolder;
   }
 
+  .titleandlinks {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
   .footnav {
     width: 35%;
     margin: 2% auto;
@@ -932,13 +981,13 @@ footer {
   }
 
   .main-pic {
-    /* background:  linear-gradient(rgba(196, 32, 32, 0.25)),url("./images/main-pic-big.png"); */
-    background: linear-gradient(
+    background:
+      linear-gradient(
         180deg,
         #f42 0%,
         rgba(68, 152, 217, 0.11528361344537819) 100%
       ),
-      url("./images/main-pic-big.png");
+      url("../images/main-pic-big.png");
     background-size: cover;
     background-repeat: no-repeat;
     grid-area: main;
@@ -988,6 +1037,12 @@ footer {
     font-size: 100%;
     text-align: justify;
     padding-top: 100px;
+  }
+
+  .titleandlinks {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
   }
 
   #br {

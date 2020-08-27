@@ -16,7 +16,7 @@ CSS
 Atom editor, Visual code
 
 <h2>Live Demo</h2>
-https://sinework.github.io/The-Next-Web/
+https://pensive-booth-3ecd98.netlify.app/
 
 <h2>Getting Started</h2>
 To get a local copy up and running follow these simple example steps.
