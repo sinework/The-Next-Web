@@ -560,8 +560,6 @@ h5 {
 /* ul elements containing div */
 .ul-news-elements {
   padding: 20px 10px;
-
-  /* background-color:#fff7f8; */
 }
 
 .ul-news-elements li {
@@ -779,7 +777,6 @@ footer {
   }
 
   .main-pic {
-    /* background:  linear-gradient(rgba(196, 32, 32, 0.25)),url("./images/main-pic-big.png"); */
     background:
       linear-gradient(
         180deg,
