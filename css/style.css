@@ -1140,7 +1140,6 @@ footer {
   }
 }
 
-
 /* media query for mobile devices */
 
 @media only screen and (max-width: 449px) {
@@ -1149,7 +1148,6 @@ footer {
   .navtop {
     display: none;
   }
-
 
   /* navlogom&s style */
   .navlogom-s {
@@ -1328,7 +1326,6 @@ footer {
   .side-pic-content i {
     margin: 0 4px;
   }
-
 
   /* Latesnt news */
   .latest-news {
