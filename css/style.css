@@ -362,7 +362,7 @@ li {
 }
 
 .latest-news {
-  margin-top: 30vh;
+  margin-top: 20vh;
 }
 
 .item img {
@@ -863,7 +863,7 @@ footer {
   }
 
   .latest-news {
-    margin-top: 15vh;
+    margin-top: 10vh;
   }
 
   .item a {
@@ -1087,7 +1087,7 @@ footer {
 
   /* Latesnt news */
   .latest-news {
-    margin-top:55vh;
+    margin-top: 50vh;
   }
 
   .newscont {
@@ -1146,6 +1146,7 @@ footer {
     font-size: 75%;
     padding-bottom: 20px;
   }
+
   .footbottom {
     display: block;
     font-size: 90%;
@@ -1351,7 +1352,7 @@ footer {
 
   /* Latesnt news */
   .latest-news {
-    padding-top:35vh;
+    padding-top: 40vh;
   }
 
   .newscont {
@@ -1421,6 +1422,7 @@ footer {
   #hidden {
     display: none;
   }
+
   .p-holder {
     display: block;
   }
