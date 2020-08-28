@@ -362,7 +362,7 @@ li {
 }
 
 .latest-news {
-  margin-top: 200px;
+  margin-top:35vh;
 }
 
 .item img {
@@ -863,7 +863,7 @@ footer {
   }
 
   .latest-news {
-    margin-top: 150px;
+    margin-top:20vh;
   }
 
   .item a {
@@ -904,7 +904,7 @@ footer {
 }
 
 /* responsiveness for mobile devices */
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width:450px) and (max-width: 767px) {
   /* navigation small */
 
   .navtop {
@@ -1044,6 +1044,10 @@ footer {
     padding-top: 100px;
   }
 
+  #side2 {
+    padding-top:15%;
+  }
+
   .titleandlinks {
     display: flex;
     flex-wrap: wrap;
@@ -1075,7 +1079,7 @@ footer {
 
   /* Latesnt news */
   .latest-news {
-    margin-top: 350px;
+    margin-top:60vh;
   }
 
   .newscont {
@@ -1133,5 +1137,385 @@ footer {
     margin: 2% auto;
     font-size: 75%;
     padding-bottom: 20px;
+  }
+}
+
+
+/* media query for mobile devices */
+
+@media only screen and (max-width:449px) {
+  /* navigation small */
+
+  .navtop {
+    display: none;
+  }
+
+  .header {
+    max-width: 100%;
+  }
+
+  /* navlogom&s style */
+  .navlogom-s {
+    display: block;
+    width: 45px;
+    height: 35px;
+    padding-top: 15px;
+    padding-left: 20px;
+  }
+
+  .navlogom-s img {
+    width: 80%;
+  }
+
+  .navli2 {
+    display: none;
+  }
+
+  /* navigation fixed styling */
+  .header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .navfixed {
+    height: 50px;
+    font-family: "Nova Square", cursive;
+    background-color: white;
+    font-size: 90%;
+  }
+
+  #searchbtn {
+    border-bottom: 1px rgba(84, 84, 84, 0.27) solid;
+    border-top: 1px rgba(84, 84, 84, 0.27) solid;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-top: 15px;
+    width: 35px;
+    font-size: 110%;
+  }
+
+  #hamburger {
+    display: block;
+    color: orangered;
+    margin-left: 10px;
+    font-size: 120%;
+  }
+
+  .hiddenmd {
+    display: none;
+  }
+
+  /* yellow nav styling */
+
+  .yellow-nav {
+    background-color: #ffe712;
+    height: 30px;
+    padding-top: 20px;
+    text-align: center;
+    max-width: 100%;
+    clear: both;
+  }
+  .yellow-nav a {
+    font-size: 60%;
+  }
+
+  /* main content */
+
+  .main-news-section {
+    display: grid;
+    grid-gap: 6px;
+    grid-template-areas:
+      "main"
+      "side-top"
+      "side-bottom";
+    margin: 4px 4px 5% 4px;
+  }
+
+  .main-pic {
+    background:
+      linear-gradient(
+        180deg,
+        #f42 0%,
+        rgba(68, 152, 217, 0.11528361344537819) 100%
+      ),
+      url("../images/main-pic-big.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: main;
+    height: 35vh;
+    padding: 1% 1% 2% 1%;
+  }
+
+  /* Side pic top */
+  .side-pic-top {
+    height: 35vh;
+  }
+
+  /* side pic bottom */
+  .side-pic-bottom {
+    height: 35vh;
+  }
+
+  /* logo sizing */
+
+  .logo-TNW img {
+    display: none;
+  }
+
+  p {
+    margin: 3px 0;
+  }
+
+  .logo-TNW p {
+    display: none;
+  }
+
+  /* styling the headline texts */
+
+  .pic-content p,
+  .side-pic-top p,
+  .side-pic-bottom p {
+    color: #fff;
+    margin: 0 0 0 10px;
+  }
+
+  .pic-content i {
+    margin: 0 4px;
+  }
+
+  .headline {
+    font-family: "Russo One", sans-serif;
+    font-size: 80%;
+    text-align: justify;
+    padding-top: 115px;
+  }
+  #side1 {
+    padding-top: 160px;
+    font-size: 90%;
+  }
+
+  #side2 {
+    padding-top: 140px;
+    font-size: 90%;
+  }
+
+
+  .titleandlinks {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  #br {
+    display: none;
+  }
+
+  #br-first {
+    display: none;
+  }
+
+  #spn {
+    display: inline;
+  }
+
+  .side-headline {
+    font-family: "Russo One", sans-serif;
+    font-size: 110%;
+    padding-top: 135px;
+    text-align: left;
+  }
+
+  .side-pic-content i {
+    margin: 0 4px;
+  }
+
+
+  /* Latesnt news */
+  .latest-news {
+    padding-top:60%;
+
+  }
+
+  .newscont {
+    width: 90%;
+    margin: auto;
+  }
+
+  .newsitem {
+    display: block;
+  }
+
+  .itemsmall {
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  .itemsmall img {
+    width: 70px;
+    height: 90px;
+    margin-right: 10px;
+
+  }
+
+  .itemsmall h4,
+  .ditem {
+    display: flex;
+  }
+
+  .imgcont img {
+    width: 100px;
+    height: 70px;
+    margin-right: 50px;
+  }
+
+  .textcontsmall h4 a {
+    font-size:85%;
+    margin-top: -10px;
+    margin-bottom:-10px;
+  }
+
+  .author {
+    font-size:50%;
+    margin-top: 0px;
+
+  }
+
+  .dealhead a {
+    font-size: 100%;
+  }
+
+  .textcontsmall2 {
+    font-size: 80%;
+    margin-left: 10px;
+  }
+
+  .ptag {
+    display: none;
+  }
+  /* funding styling */
+
+.title a {
+  font-size: 90%;
+}
+
+.p-holder {
+  display: block;
+}
+.a-side {
+  border: none;
+  font-size: 75%;
+}
+
+  /* footer styling for mobile */
+  .section-4 {
+    display: block;
+    margin: auto;
+  }
+
+  .ficon {
+    color: white;
+    margin: 5px;
+    font-size:70%;
+    background-color: #333;
+    padding: 8px;
+    border-radius: 50%;
+    border: 2px solid #333;
+  }
+
+  .footnav {
+    text-align:
+    padding-bottom: 20px;
+    margin-left: -20px;
+  }
+
+  .footnav a {
+      font-size: 70%;
+  }
+  .footbottom {
+    display: block;
+    font-size: 90%;
+  }
+  .footcont {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  #tnwfooter {
+    width: 30px;
+    height: 15px;
+  }
+}
+
+@media only screen and (height:667px) and (width:375px) {
+  .latest-news {
+    padding-top:55%;
+  }
+  .headline {
+    font-family: "Russo One", sans-serif;
+    font-size: 80%;
+    text-align: justify;
+    padding:45% 2% 0 2%;
+
+  }
+  #side1 {
+    padding-top:55%;
+    font-size: 90%;
+  }
+
+  #side2 {
+    padding-top:50%;
+    font-size: 90%;
+  }
+
+}
+
+@media only screen and (height:736px) and (width:414px) {
+  .latest-news {
+    padding-top:60%;
+  }
+  .headline {
+    font-family: "Russo One", sans-serif;
+    font-size: 80%;
+    text-align: justify;
+    padding:45% 2% 0 2%;
+
+  }
+  #side1 {
+    padding-top:55%;
+    font-size: 90%;
+  }
+
+  #side2 {
+    padding-top:50%;
+    font-size: 90%;
+  }
+
+}
+
+
+
+
+@media only screen and (height:812px) and (width:375px) {
+  .headline {
+    font-family: "Russo One", sans-serif;
+    font-size: 80%;
+    text-align: justify;
+    padding:60% 2% 0 2%;
+
+  }
+  #side1 {
+    padding-top:70%;
+    font-size: 90%;
+  }
+
+  #side2 {
+    padding-top:60%;
+    font-size: 90%;
+  }
+
+  .latest-news {
+    padding-top:80%;
   }
 }
