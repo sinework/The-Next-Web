@@ -27,6 +27,57 @@ li {
   justify-content: center;
   align-items: center;
 }
+.d-flex {
+  display: flex;
+}
+
+.font90 {
+  font-size: 90%;
+}
+.font1 {
+  font-family: "Varela Round", sans-serif;
+}
+.font2 {
+  font-family: "Russo One", sans-serif;
+}
+
+.textdeco-none {
+  text-decoration: none;
+}
+.m-0 {
+  margin: 0;
+}
+.textstyle1 {
+  font-family: "Russo One", sans-serif;
+  color:white;
+  font-size: 200%;
+  text-align: justify;
+  margin: 0;
+}
+
+.textstyle2 {
+  color:white;
+  font-size: 110%;
+  text-align: justify;
+  margin: 0;
+}
+
+.textstyle3 {
+  font-family: "Russo One", sans-serif;
+  color:white;
+  font-size:120%;
+  text-align: justify;
+  margin: 0;
+}
+.font-bold {
+  font-weight: bold;
+}
+.position-rel {
+  position: relative;
+}
+.d-grid {
+  display: grid;
+}
 
 /* styling for large screen */
 
@@ -34,11 +85,9 @@ li {
 .navtop {
   background-color: black;
   padding: 10px;
-  position: relative;
 }
 
 .navlist {
-  display: flex;
   list-style-type: none;
 }
 
@@ -47,54 +96,31 @@ li {
 }
 
 .navlist a {
-  text-decoration: none;
   color: #aaa;
 }
 
 .footbottom a {
-  text-decoration: none;
   color: rgba(167, 169, 169, 1);
 }
 
 .footnav a {
-  text-decoration: none;
   text-transform: uppercase;
   color: rgba(167, 169, 169, 1);
   margin-right: 10px;
 }
 
-.flexed-desc a {
-  text-decoration: none;
-}
-
-.sec-4-big-pic-third a {
-  text-decoration: none;
-}
-
-.sec-4-big-pic-second a {
-  text-decoration: none;
-}
-
-.sec-4-big-pic-first a {
-  text-decoration: none;
-}
-
 .textfoot a {
-  font-family: "Varela Round", sans-serif;
   font-size: 12px;
   color: rgba(36, 36, 36, 0.9);
 }
 
 .title a {
-  font-family: "Russo One", sans-serif;
-  text-decoration: none;
   color: #f42;
   font-size: 24px;
   font-weight: bolder;
 }
 
 .titleandlinks {
-  display: flex;
   justify-content: space-between;
   padding: 0 20px;
   align-items: baseline;
@@ -108,20 +134,14 @@ li {
   margin: 0 6px;
 }
 
-.p-holder {
-  display: flex;
-}
 
 .a-side {
-  text-decoration: none;
   border-right: 1px solid gray;
   padding-right: 3px;
-  font-family: "Russo One", sans-serif;
   color: #f42;
 }
 
 .item a {
-  text-decoration: none;
   color: black;
   font-size: 16px;
   font-family: "Varela Round", sans-serif;
@@ -130,13 +150,11 @@ li {
 
 .yellow-nav a {
   margin-left: 15px;
-  text-decoration: none;
   color: black;
   font-size: 15px;
 }
 
 .dealtitlediv p a {
-  text-decoration: none;
   color: #f42;
 }
 
@@ -200,7 +218,6 @@ li {
   margin-right: 20px;
   font-size: 120%;
   color: red;
-  font-weight: bold;
 }
 
 .ticket {
@@ -211,7 +228,6 @@ li {
   font-size: 60%;
   border: none;
   border-radius: 3px;
-  font-weight: bold;
 }
 
 .ticket:hover {
@@ -241,19 +257,16 @@ li {
 
 /* Styles for the main news section */
 
-/* styling for making the sections a grid layout */
+/* styling for display */
 
-.main-news-section {
-  display: grid;
-  grid-gap: 6px;
-  grid-template-areas:
-    "main side-top "
-    "main side-bottom";
-  height: 50vh;
-  margin: 4px;
+.display {
+  align-items: center;
+  justify-content: center;
+  width: 99.7%;
+  margin:auto;
 }
 
-.main-pic {
+.mainpic {
   background:
     linear-gradient(
       180deg,
@@ -263,88 +276,71 @@ li {
     url("../images/main-pic-big.png");
   background-size: cover;
   background-repeat: no-repeat;
-  grid-area: main;
-  padding: 1% 1% 2% 1%;
+  flex: 2;
+  height: 67vh;
+  padding: 1%;
+  margin:2px;
 }
 
-.side-pic-top {
-  background:
-    linear-gradient(
-      180deg,
-      rgba(27, 112, 186, 0.5) 0%,
-      rgba(68, 152, 217, 0.11528361344537819) 100%
-    ),
-    url("../images/side-top.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  grid-area: side-top;
-  padding-bottom: 2%;
+.side {
+  flex: 1;
 }
 
-.side-pic-bottom {
+.side1 {
   background:
-    linear-gradient(
-      180deg,
-      rgba(27, 112, 186, 0.5) 0%,
-      rgba(68, 152, 217, 0.11528361344537819) 100%
-    ),
-    url("../images/side-pic.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  grid-area: side-bottom;
-  padding-bottom: 2%;
+  linear-gradient(
+    180deg,
+    rgba(27, 112, 186, 0.5) 0%,
+    rgba(68, 152, 217, 0.11528361344537819) 100%
+  ),
+  url("../images/side-top.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+height:33vh;
+padding: 2%;
+margin: 2px;
+}
+
+.side2 {
+  background:
+  linear-gradient(
+    180deg,
+    rgba(27, 112, 186, 0.5) 0%,
+    rgba(68, 152, 217, 0.11528361344537819) 100%
+  ),
+  url("../images/side-pic.png");
+background-size: cover;
+background-repeat: no-repeat;
+margin:2px;
+height:32vh;
+padding:2%;
+}
+
+.headlinecont,.sidecont1,.sidecont2 {
+  position: absolute;
+  bottom:5px;
+}
+
+.sidecont1,.sidecont2 {
+  width: 90%;
+  margin: auto;
 }
 
 /* logo sizing */
 .logo-TNW {
-  display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo-TNW img {
-  width: 410px;
+  width: 250px;
   height: 100px;
-  margin: 20px;
+  margin: 10px;
 }
 
 .logo-TNW p {
   color: #fff;
   margin: 20px;
-}
-
-/* styling the headline texts */
-
-.pic-content p,
-.side-pic-top p,
-.side-pic-bottom p {
-  color: #fff;
-  margin: 0 0 0 10px;
-}
-
-.pic-content i {
-  margin: 0 4px;
-}
-
-.headline {
-  font-family: "Russo One", sans-serif;
-  font-size: 200%;
-  text-align: justify;
-  padding-top: 140px;
-  color: white;
-  text-shadow: 1px 1px black;
-  margin-bottom: 5px;
-}
-
-.side-headline {
-  font-family: "Russo One", sans-serif;
-  font-size: 130%;
-  text-align: justify;
-  padding-top: 170px;
-  text-shadow: 1px 1px black;
-}
-
-.side-pic-content i {
-  margin: 0 4px;
 }
 
 /* styling latest news section */
@@ -355,14 +351,16 @@ li {
 }
 
 .newsitem {
-  display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   justify-content: center;
 }
 
 .latest-news {
-  margin-top: 20vh;
+margin-top: 5vh;
+}
+.latest-funding {
+  margin-top: 5vh;
 }
 
 .item img {
@@ -370,36 +368,30 @@ li {
 }
 
 .author {
-  font-family: "Varela Round", sans-serif;
   font-size: 13px;
   color: grey;
 }
 
+
 /* styling latest funding section */
-.stylehead {
-  position: relative;
-}
 
 .styletitle {
   background-color: #f42;
-  margin: 0;
   text-align: left;
   padding: 10px 0 10px 80px;
   color: white;
-  font-family: "Varela Round", sans-serif;
   text-shadow: 1px 1px black;
 }
 
 .subheadstyle {
   background-color: rgba(255, 68, 34, 0.08);
-  margin: 0;
   text-align: left;
   padding: 5px 0 5px 80px;
 }
 
-.subheadstyle h4,
-h5 {
-  margin: 0;
+.item2 {
+  margin-bottom:5%;
+  margin-top:4%;
 }
 
 .item2 img {
@@ -435,6 +427,13 @@ h5 {
   line-height: 2;
   color: rgba(36, 36, 36, 0.5);
 }
+.subtext {
+  font-size:80%;
+}
+.subheadnormal {
+  margin-top: 3px;
+  font-size: 115%;
+}
 
 /* this is the styling for the section for news items */
 
@@ -446,17 +445,17 @@ h5 {
   width: 90%;
 }
 
+
+
 /* Grid item styling. The item container is flexed with direction of column */
 
 .section-4-item {
-  display: flex;
   flex-direction: column;
   padding: 10px;
 }
 
 .section-4-item h2 {
   color: #ef5350;
-  font-family: "Russo One", sans-serif;
   font-size: 120%;
 }
 
@@ -508,15 +507,11 @@ h5 {
 .headline-header {
   padding: 150px 0 0 20px;
   color: #fff;
-  font-family: "Varela Round", sans-serif;
-  margin: 0;
   font-size: 85%;
 }
 
 .pic-headline {
   color: #fff;
-  font-weight: bold;
-  font-family: "Varela Round", sans-serif;
   font-size: 105%;
   padding: 0 0 0 20px;
   margin: 5px 0;
@@ -524,9 +519,7 @@ h5 {
 
 .view-history {
   color: #fff;
-  margin: 0;
   padding: 0 0 0 20px;
-  font-family: "Varela Round", sans-serif;
   font-size: 75%;
 }
 
@@ -548,7 +541,6 @@ h5 {
   color: #ef5350;
   padding-left: 5px;
   margin: 1px;
-  font-family: "Varela Round", sans-serif;
 }
 
 .flexed-pic {
@@ -577,7 +569,6 @@ h5 {
   margin-left: 0;
   padding-bottom: 10px;
   padding-left: 5px;
-  font-family: "Varela Round", sans-serif;
   font-size: 12px;
   color: grey;
 }
@@ -599,13 +590,11 @@ h5 {
 }
 
 .dealtitlediv {
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .imgcont {
-  position: relative;
   overflow: hidden;
 }
 
@@ -619,8 +608,6 @@ h5 {
   width: 250px;
   padding-top: 50px;
   text-align: center;
-  font-size: 90%;
-  font-family: "Varela Round", sans-serif;
 }
 
 /* styling for footer section */
@@ -656,7 +643,6 @@ footer {
   margin: 2% auto;
   font-size: 75%;
   padding-bottom: 20px;
-  display: flex;
   justify-content: center;
 }
 
@@ -669,7 +655,6 @@ footer {
 }
 
 .footbottom {
-  margin: 0;
   background-color: #000;
   padding: 2% 0;
   text-align: center;
@@ -681,6 +666,7 @@ footer {
   margin-right: 5px;
 }
 
+
 /* responsiveness for medium devices */
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   /* top navigation styling */
@@ -688,8 +674,10 @@ footer {
     background-color: black;
     padding: 10px;
     font-size: 78%;
-    margin: 0;
     height: 30px;
+  }
+  .d-m-block {
+    display: block;
   }
 
   .navlist li {
@@ -703,7 +691,6 @@ footer {
     height: 60px;
     text-align: center;
     padding-top: 30px;
-    display: block;
     position: absolute;
     top: 0;
     z-index: 200;
@@ -715,10 +702,6 @@ footer {
 
   .navlogom-m img {
     width: 70%;
-  }
-
-  .navlogom-s {
-    display: block;
   }
 
   .navlogom-s img {
@@ -736,8 +719,6 @@ footer {
   .navfixed {
     height: 40px;
     font-family: "Nova Square", cursive;
-    background-color: white;
-    font-size: 90%;
   }
 
   .navli2 {
@@ -764,82 +745,36 @@ footer {
     padding: 5px 5px 5px 105px;
     clear: both;
   }
-
-  /* main content */
-  .main-news-section {
-    display: grid;
-    grid-gap: 6px;
-    grid-template-areas:
-      "main side-top "
-      "main side-bottom";
-    height: 50vh;
-    margin: 4px 4px 5% 4px;
+/* text styling for medium screen*/
+  .textstyle1 {
+    color:white;
+    font-size: 170%;
+    text-align: justify;
   }
 
-  .main-pic {
-    background:
-      linear-gradient(
-        180deg,
-        #f42 0%,
-        rgba(68, 152, 217, 0.11528361344537819) 100%
-      ),
-      url("../images/main-pic-big.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    grid-area: main;
-    padding: 1% 1% 2% 1%;
+  .textstyle2 {
+    color:white;
+    font-size: 70%;
+    text-align: justify;
+    }
+
+  .textstyle3 {
+    color:white;
+    font-size:90%;
+    text-align: justify;
   }
 
   /* logo sizing */
 
-  .logo-TNW img {
-    display: none;
-  }
+.logo-TNW img {
+  display: none;
+}
 
-  .logo-TNW p {
-    display: none;
-  }
+.logo-TNW p {
+  display: none;
+}
 
-  /* styling the headline texts */
-
-  .pic-content p,
-  .side-pic-top p,
-  .side-pic-bottom p {
-    color: #fff;
-    margin: 0 0 0 10px;
-  }
-
-  .pic-content i {
-    margin: 0 4px;
-  }
-
-  .headline {
-    font-family: "Russo One", sans-serif;
-    font-size: 150%;
-    text-align: justify;
-    padding-top: 225px;
-  }
-
-  #br {
-    display: none;
-  }
-
-  #spn {
-    display: block;
-  }
-
-  .side-headline {
-    font-family: "Russo One", sans-serif;
-    font-size: 100%;
-    padding-top: 125px;
-    text-align: left;
-  }
-
-  .side-pic-content i {
-    margin: 0 4px;
-  }
-
-  /* styling latest news section */
+/* styling latest news section */
   .section-4 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -856,36 +791,24 @@ footer {
   }
 
   .newsitem {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     justify-content: center;
   }
 
-  .latest-news {
-    margin-top: 10vh;
-  }
-
   .item a {
-    text-decoration: none;
     color: black;
     font-size: 16px;
-    font-family: "Varela Round", sans-serif;
-    font-weight: bold;
   }
 
   .author {
-    font-family: "Varela Round", sans-serif;
     font-size: 13px;
     color: grey;
   }
 
   .title a {
-    font-family: "Russo One", sans-serif;
-    text-decoration: none;
     color: #f42;
     font-size: 28px;
-    font-weight: bolder;
   }
 
   #hidden {
@@ -893,7 +816,6 @@ footer {
   }
 
   .titleandlinks {
-    display: flex;
     flex-wrap: wrap;
     margin-bottom: 10px;
   }
@@ -905,19 +827,24 @@ footer {
     text-align: center;
     padding-bottom: 20px;
   }
+
 }
 
+
+
 /* responsiveness for mobile devices */
-@media only screen and (min-width: 600px) and (max-width: 767px) {
+@media only screen and (min-width: 450px) and (max-width: 767px) {
   /* navigation small */
 
   .navtop {
     display: none;
   }
+  .d-sm-block {
+    display: block;
+  }
 
   /* navlogom&s style */
   .navlogom-s {
-    display: block;
     width: 85px;
     height: 35px;
     padding-top: 15px;
@@ -943,8 +870,6 @@ footer {
   .navfixed {
     height: 50px;
     font-family: "Nova Square", cursive;
-    background-color: white;
-    font-size: 90%;
   }
 
   #searchbtn {
@@ -978,211 +903,156 @@ footer {
     clear: both;
   }
 
-  /* main content */
-  .main-news-section {
-    display: grid;
-    grid-gap: 6px;
-    grid-template-areas:
-      "main"
-      "side-top"
-      "side-bottom";
-    margin: 4px 4px 5% 4px;
-  }
+.mainpic,.side1,.side2 {
+  height: 25vh;
+}
 
-  .main-pic {
-    background:
-      linear-gradient(
-        180deg,
-        #f42 0%,
-        rgba(68, 152, 217, 0.11528361344537819) 100%
-      ),
-      url("../images/main-pic-big.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    grid-area: main;
-    height: 30vh;
-    padding: 1% 1% 2% 1%;
-  }
+.textstyle1 {
+  color:white;
+  font-size: 140%;
+  text-align: justify;
+}
 
-  /* Side pic top */
-  .side-pic-top {
-    height: 30vh;
-  }
+.textstyle2 {
+  color:white;
+  font-size: 90%;
+  text-align: justify;
+}
 
-  /* side pic bottom */
-  .side-pic-bottom {
-    height: 30vh;
-  }
+.textstyle3 {
+  color:white;
+  font-size:110%;
+  text-align: justify;
+}
 
   /* logo sizing */
 
-  .logo-TNW img {
-    display: none;
-  }
-
-  p {
-    margin: 3px 0;
-  }
-
-  .logo-TNW p {
-    display: none;
-  }
-
-  /* styling the headline texts */
-
-  .pic-content p,
-  .side-pic-top p,
-  .side-pic-bottom p {
-    color: #fff;
-    margin: 0 0 0 10px;
-  }
-
-  .pic-content i {
-    margin: 0 4px;
-  }
-
-  .headline {
-    font-family: "Russo One", sans-serif;
-    font-size: 100%;
-    text-align: justify;
-    padding-top: 100px;
-  }
-
-  #side2 {
-    padding-top: 15%;
-  }
-
-  #hidden {
-    display: none;
-  }
-
-  .titleandlinks {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-  }
-
-  #br {
-    display: none;
-  }
-
-  #br-first {
-    display: none;
-  }
-
-  #spn {
-    display: inline;
-  }
-
-  .side-headline {
-    font-family: "Russo One", sans-serif;
-    font-size: 110%;
-    padding-top: 135px;
-    text-align: left;
-  }
-
-  .side-pic-content i {
-    margin: 0 4px;
-  }
-
-  /* Latesnt news */
-  .latest-news {
-    margin-top: 50vh;
-  }
-
-  .newscont {
-    width: 90%;
-    margin: auto;
-  }
-
-  .newsitem {
-    display: block;
-  }
-
-  .itemsmall {
-    display: flex;
-    margin-bottom: 15px;
-  }
-
-  .itemsmall img {
-    width: 70px;
-    height: 70px;
-    margin-right: 15px;
-  }
-
-  .itemsmall h4,
-  .ditem {
-    display: flex;
-  }
-
-  .imgcont img {
-    width: 100px;
-    height: 70px;
-    margin-right: 50px;
-  }
-
-  .dealhead a {
-    font-size: 100%;
-  }
-
-  .textcontsmall2 {
-    font-size: 90%;
-  }
-
-  .ptag {
-    display: none;
-  }
-
-  /* Latesnt news */
-  .section-4 {
-    display: block;
-    margin: auto;
-  }
-
-  .footnav {
-    text-align: center;
-    width: 60%;
-    margin: 2% auto;
-    font-size: 75%;
-    padding-bottom: 20px;
-  }
-
-  .footbottom {
-    display: block;
-    font-size: 90%;
-  }
-
-  .footcont {
-    width: 30%;
-    margin: 0 auto;
-  }
-
-  #tnwfooter {
-    width: 30px;
-    height: 15px;
-  }
+.logo-TNW img {
+  display: none;
+}
+.logo-TNW p {
+  display: none;
 }
 
-/* media query for mobile devices */
+/* Latesnt news */
 
-@media only screen and (max-width: 599px) {
+.newscont {
+  width: 90%;
+  margin: auto;
+}
+
+.itemsmall {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.itemsmall img {
+  width: 80px;
+  height:100px;
+}
+
+.itemsmall h4,
+.ditem {
+  display: flex;
+}
+
+.imgcont img {
+  width: 100px;
+  height: 70px;
+  margin-right:20px;
+}
+
+.p-holder {
+  margin-bottom: 10px;
+}
+.a-side {
+  border: none;
+  font-weight:100;
+
+}
+
+.dealhead a {
+  font-size: 100%;
+}
+
+.textcontsmall h4 a {
+  font-size: 85%;
+  margin-left:10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.textcontsmall p {
+  font-size: 80%;
+  margin-left:10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.dealhead {
+  margin-left: 10px;
+}
+.dealprice {
+  margin-left: 10px;
+}
+.ptag {
+  display: none;
+}
+
+/* Latesnt news */
+.section-4 {
+  margin: auto;
+}
+
+.footnav {
+  text-align: center;
+  width: 60%;
+  margin: 2% auto;
+  font-size: 75%;
+  padding-bottom: 20px;
+}
+.footbottom {
+  font-size: 90%;
+}
+
+.section-4-item h2{
+  margin:10px 0;
+
+}
+
+.footcont {
+  width: 200px;
+  margin: 0 auto;
+}
+
+#tnwfooter {
+  width: 30px;
+  height: 15px;
+}
+
+}
+
+
+/* responsiveness for mobile devices */
+@media only screen and (max-width: 449px) {
   /* navigation small */
 
   .navtop {
     display: none;
   }
+  .d-xsm-block {
+    display: block;
+  }
 
   /* navlogom&s style */
   .navlogom-s {
-    display: block;
-    width: 45px;
+    width: 85px;
     height: 35px;
     padding-top: 15px;
     padding-left: 20px;
   }
 
   .navlogom-s img {
-    width: 80%;
+    width: 70%;
   }
 
   .navli2 {
@@ -1200,8 +1070,7 @@ footer {
   .navfixed {
     height: 50px;
     font-family: "Nova Square", cursive;
-    background-color: white;
-    font-size: 90%;
+
   }
 
   #searchbtn {
@@ -1230,315 +1099,127 @@ footer {
   .yellow-nav {
     background-color: #ffe712;
     height: 30px;
-    padding-top: 20px;
+    padding-top: 10px;
     text-align: center;
-    max-width: 100%;
     clear: both;
   }
 
-  .yellow-nav a {
-    font-size: 60%;
-  }
+.mainpic,.side1,.side2 {
+  height: 25vh;
+}
 
-  /* main content */
+.textstyle1 {
+  color:white;
+  font-size: 100%;
+  text-align: justify;
+}
 
-  .main-news-section {
-    display: grid;
-    grid-gap: 6px;
-    grid-template-areas:
-      "main"
-      "side-top"
-      "side-bottom";
-    margin: 4px 4px 5% 4px;
-  }
+.textstyle2 {
+  color:white;
+  font-size: 70%;
+  text-align: justify;
+}
 
-  .main-pic {
-    background:
-      linear-gradient(
-        180deg,
-        #f42 0%,
-        rgba(68, 152, 217, 0.11528361344537819) 100%
-      ),
-      url("../images/main-pic-big.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    grid-area: main;
-    height: 35vh;
-    padding: 1% 1% 2% 1%;
-  }
-
-  /* Side pic top */
-  .side-pic-top {
-    height: 35vh;
-  }
-
-  /* side pic bottom */
-  .side-pic-bottom {
-    height: 35vh;
-  }
+.textstyle3 {
+  color:white;
+  font-size:100%;
+  text-align: justify;
+}
 
   /* logo sizing */
 
-  .logo-TNW img {
-    display: none;
-  }
-
-  p {
-    margin: 3px 0;
-  }
-
-  .logo-TNW p {
-    display: none;
-  }
-
-  /* styling the headline texts */
-
-  .pic-content p,
-  .side-pic-top p,
-  .side-pic-bottom p {
-    color: #fff;
-    margin: 0 0 0 10px;
-  }
-
-  .pic-content i {
-    margin: 0 4px;
-  }
-
-  .headline {
-    font-family: "Russo One", sans-serif;
-    font-size: 80%;
-    text-align: justify;
-    padding-top: 115px;
-  }
-
-  #side1 {
-    padding-top: 160px;
-    font-size: 90%;
-  }
-
-  #side2 {
-    padding-top: 140px;
-    font-size: 90%;
-  }
-
-  .titleandlinks {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-  }
-
-  #br {
-    display: none;
-  }
-
-  #br-first {
-    display: none;
-  }
-
-  #spn {
-    display: inline;
-  }
-
-  .side-headline {
-    font-family: "Russo One", sans-serif;
-    font-size: 110%;
-    padding-top: 135px;
-    text-align: left;
-  }
-
-  .side-pic-content i {
-    margin: 0 4px;
-  }
-
-  /* Latesnt news */
-  .latest-news {
-    padding-top: 40vh;
-  }
-
-  .newscont {
-    width: 90%;
-    margin: auto;
-  }
-
-  .newsitem {
-    display: block;
-  }
-
-  .itemsmall {
-    display: flex;
-    margin-bottom: 15px;
-  }
-
-  .itemsmall img {
-    width: 70px;
-    height: 90px;
-    margin-right: 10px;
-  }
-
-  .itemsmall h4,
-  .ditem {
-    display: flex;
-  }
-
-  .imgcont img {
-    width: 100px;
-    height: 70px;
-    margin-right: 50px;
-  }
-
-  .dealhead a {
-    font-size: 100%;
-  }
-
-  .title a {
-    font-size: 90%;
-  }
-
-  .footnav a {
-    font-size: 70%;
-  }
-
-  .textcontsmall h4 a {
-    font-size: 85%;
-    margin-top: -10px;
-    margin-bottom: -10px;
-  }
-
-  .author {
-    font-size: 50%;
-    margin-top: 0;
-  }
-
-  .textcontsmall2 {
-    font-size: 80%;
-    margin-left: 10px;
-  }
-
-  .ptag {
-    display: none;
-  }
-
-  /* funding styling */
-  #hidden {
-    display: none;
-  }
-
-  .p-holder {
-    display: block;
-  }
-
-  .a-side {
-    border: none;
-    font-size: 75%;
-  }
-
-  /* footer styling for mobile */
-  .section-4 {
-    display: block;
-    margin: auto;
-  }
-
-  .ficon {
-    color: white;
-    margin: 5px;
-    font-size: 70%;
-    background-color: #333;
-    padding: 8px;
-    border-radius: 50%;
-    border: 2px solid #333;
-  }
-
-  .footnav {
-    text-align: padding-bottom;
-    margin-left: -20px;
-  }
-
-  .footbottom {
-    display: block;
-    font-size: 90%;
-  }
-
-  .footcont {
-    font-size: 90%;
-    width: 35%;
-    margin: 0 auto;
-  }
-
-  #tnwfooter {
-    width: 30px;
-    height: 15px;
-  }
+.logo-TNW img {
+  display: none;
+}
+.logo-TNW p {
+  display: none;
 }
 
-@media only screen and (height: 667px) and (width: 375px) {
-  .latest-news {
-    padding-top: 55%;
-  }
+/* Latesnt news */
 
-  .headline {
-    font-family: "Russo One", sans-serif;
-    font-size: 80%;
-    text-align: justify;
-    padding: 45% 2% 0 2%;
-  }
-
-  #side1 {
-    padding-top: 55%;
-    font-size: 90%;
-  }
-
-  #side2 {
-    padding-top: 50%;
-    font-size: 90%;
-  }
-
-  #hidden {
-    display: none;
-  }
+.newscont {
+  width: 90%;
+  margin: auto;
 }
 
-@media only screen and (height: 736px) and (width: 414px) {
-  .latest-news {
-    padding-top: 60%;
-  }
-
-  .headline {
-    font-family: "Russo One", sans-serif;
-    font-size: 80%;
-    text-align: justify;
-    padding: 45% 2% 0 2%;
-  }
-
-  #side1 {
-    padding-top: 55%;
-    font-size: 90%;
-  }
-
-  #side2 {
-    padding-top: 50%;
-    font-size: 90%;
-  }
+.itemsmall {
+  margin-bottom: 15px;
 }
 
-@media only screen and (height: 812px) and (width: 375px) {
-  .headline {
-    font-family: "Russo One", sans-serif;
-    font-size: 80%;
-    text-align: justify;
-    padding: 60% 2% 0 2%;
-  }
+.itemsmall img {
+  width: 80px;
+  height:100px;
+}
 
-  #side1 {
-    padding-top: 70%;
-    font-size: 90%;
-  }
+.imgcont img {
+  width: 100px;
+  height: 70px;
+  margin-right:20px;
+}
 
-  #side2 {
-    padding-top: 60%;
-    font-size: 90%;
-  }
+.p-holder {
+  margin-bottom: 10px;
+}
+.a-side {
+  border: none;
+  font-weight:100;
 
-  .latest-news {
-    padding-top: 65%;
-  }
+}
+
+.textcontsmall h4 a {
+  font-size: 85%;
+  margin-left:10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.textcontsmall p {
+  font-size: 80%;
+  margin-left:10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.dealhead {
+  margin-left: 10px;
+}
+.dealprice {
+  margin-left: 10px;
+}
+.ptag {
+  display: none;
+}
+
+/* Latesnt news */
+.section-4 {
+  margin: auto;
+}
+
+.footnav {
+  text-align: center;
+  width: 60%;
+  margin: 2% auto;
+  font-size: 75%;
+  padding-bottom: 20px;
+}
+.footbottom {
+  font-size: 90%;
+}
+.ficon {
+  font-size:75%;
+}
+.section-4-item h2{
+  margin:10px 0;
+
+}
+
+.footcont {
+  width: 200px;
+  margin: 0 auto;
+}
+
+#tnwfooter {
+  width: 30px;
+  height: 15px;
+}
+
 }
