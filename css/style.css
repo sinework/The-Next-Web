@@ -383,7 +383,6 @@ li {
   color: grey;
 }
 
-
 /* styling latest funding section */
 
 .styletitle {
@@ -457,8 +456,6 @@ li {
   grid-gap: 5px;
   width: 90%;
 }
-
-
 
 /* Grid item styling. The item container is flexed with direction of column */
 
@@ -679,7 +676,6 @@ footer {
   margin-right: 5px;
 }
 
-
 /* responsiveness for medium devices */
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   /* top navigation styling */
@@ -843,8 +839,6 @@ footer {
     padding-bottom: 20px;
   }
 }
-
-
 
 /* responsiveness for mobile devices */
 @media only screen and (min-width: 450px) and (max-width: 767px) {
@@ -1050,7 +1044,6 @@ footer {
     height: 15px;
   }
 }
-
 
 /* responsiveness for mobile devices */
 @media only screen and (max-width: 449px) {
