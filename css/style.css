@@ -169,7 +169,7 @@ li {
   color: white;
 }
 
-#whitetext {
+.whitetext {
   color: white;
 }
 
@@ -212,7 +212,7 @@ li {
   background-color: white;
 }
 
-#sideinfologo {
+.sideinfologo {
   width: 125px;
   height: 54px;
 }
@@ -241,12 +241,12 @@ li {
   background-color: purple;
 }
 
-#searchbtn {
+.searchbtn {
   transform: rotate(90deg);
   color: #aaa;
 }
 
-#hamburger {
+.hamburger {
   display: none;
 }
 
@@ -670,11 +670,13 @@ footer {
   text-align: center;
 }
 
-#tnwfooter {
+.tnwfooter {
   width: 50px;
   height: 25px;
   margin-right: 5px;
+  padding: 0;
 }
+
 
 /* responsiveness for medium devices */
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
@@ -710,13 +712,11 @@ footer {
     margin-left: 80px;
   }
 
-  .navlogom-m img {
-    width: 70%;
-  }
-
+  .navlogom-m img,
   .navlogom-s img {
     width: 70%;
   }
+
 
   /* navigation fixed styling */
   .header {
@@ -735,7 +735,7 @@ footer {
     margin-left: -60px;
   }
 
-  #searchbtn {
+  .searchbtn {
     border-bottom: 1px rgba(84, 84, 84, 0.27) solid;
     padding-bottom: 10px;
     width: 25px;
@@ -743,9 +743,6 @@ footer {
     font-size: 110%;
   }
 
-  .hiddenmd {
-    display: none;
-  }
 
   /* yellow nav styling */
 
@@ -777,11 +774,9 @@ footer {
 
   /* logo sizing */
 
-  .logo-TNW img {
-    display: none;
-  }
-
-  .logo-TNW p {
+  .logo-TNW img,
+  .logo-TNW p,
+  .hiddenmd {
     display: none;
   }
 
@@ -822,7 +817,7 @@ footer {
     font-size: 28px;
   }
 
-  #hidden {
+  .hidden {
     display: none;
   }
 
@@ -844,7 +839,11 @@ footer {
 @media only screen and (min-width: 450px) and (max-width: 767px) {
   /* navigation small */
 
-  .navtop {
+  .navtop,
+  .navli2,
+  .hiddenmd,
+  .logo-TNW img,
+  .logo-TNW p {
     display: none;
   }
 
@@ -864,9 +863,6 @@ footer {
     width: 70%;
   }
 
-  .navli2 {
-    display: none;
-  }
 
   /* navigation fixed styling */
   .header {
@@ -881,7 +877,7 @@ footer {
     font-family: "Nova Square", cursive;
   }
 
-  #searchbtn {
+  .searchbtn {
     border-bottom: 1px rgba(84, 84, 84, 0.27) solid;
     border-top: 1px rgba(84, 84, 84, 0.27) solid;
     padding-bottom: 10px;
@@ -891,16 +887,13 @@ footer {
     font-size: 110%;
   }
 
-  #hamburger {
+  .hamburger {
     display: block;
     color: orangered;
     margin-left: 10px;
     font-size: 120%;
   }
 
-  .hiddenmd {
-    display: none;
-  }
 
   /* yellow nav styling */
 
@@ -938,13 +931,6 @@ footer {
 
   /* logo sizing */
 
-  .logo-TNW img {
-    display: none;
-  }
-
-  .logo-TNW p {
-    display: none;
-  }
 
   /* Latesnt news */
 
@@ -1001,10 +987,7 @@ footer {
     margin-bottom: 0;
   }
 
-  .dealhead {
-    margin-left: 10px;
-  }
-
+  .dealhead,
   .dealprice {
     margin-left: 10px;
   }
@@ -1035,13 +1018,14 @@ footer {
   }
 
   .footcont {
-    width: 200px;
+    width: 230px;
     margin: 0 auto;
   }
 
-  #tnwfooter {
+  .tnwfooter {
     width: 30px;
     height: 15px;
+    padding: 0;
   }
 }
 
@@ -1049,7 +1033,11 @@ footer {
 @media only screen and (max-width: 449px) {
   /* navigation small */
 
-  .navtop {
+  .navtop,
+  .navli2,
+  .hiddenmd,
+  .logo-TNW img,
+  .logo-TNW p {
     display: none;
   }
 
@@ -1069,9 +1057,6 @@ footer {
     width: 70%;
   }
 
-  .navli2 {
-    display: none;
-  }
 
   /* navigation fixed styling */
   .header {
@@ -1086,7 +1071,7 @@ footer {
     font-family: "Nova Square", cursive;
   }
 
-  #searchbtn {
+  .searchbtn {
     border-bottom: 1px rgba(84, 84, 84, 0.27) solid;
     border-top: 1px rgba(84, 84, 84, 0.27) solid;
     padding-bottom: 10px;
@@ -1096,15 +1081,11 @@ footer {
     font-size: 110%;
   }
 
-  #hamburger {
+  .hamburger {
     display: block;
     color: orangered;
     margin-left: 10px;
     font-size: 120%;
-  }
-
-  .hiddenmd {
-    display: none;
   }
 
   /* yellow nav styling */
@@ -1143,13 +1124,7 @@ footer {
 
   /* logo sizing */
 
-  .logo-TNW img {
-    display: none;
-  }
 
-  .logo-TNW p {
-    display: none;
-  }
 
   /* Latesnt news */
 
@@ -1248,7 +1223,7 @@ footer {
     margin: 0 auto;
   }
 
-  #tnwfooter {
+  .tnwfooter {
     width: 30px;
     height: 15px;
   }
