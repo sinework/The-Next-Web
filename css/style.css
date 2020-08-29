@@ -27,6 +27,7 @@ li {
   justify-content: center;
   align-items: center;
 }
+
 .d-flex {
   display: flex;
 }
@@ -34,9 +35,11 @@ li {
 .font90 {
   font-size: 90%;
 }
+
 .font1 {
   font-family: "Varela Round", sans-serif;
 }
+
 .font2 {
   font-family: "Russo One", sans-serif;
 }
@@ -44,19 +47,21 @@ li {
 .textdeco-none {
   text-decoration: none;
 }
+
 .m-0 {
   margin: 0;
 }
+
 .textstyle1 {
   font-family: "Russo One", sans-serif;
-  color:white;
+  color: white;
   font-size: 200%;
   text-align: justify;
   margin: 0;
 }
 
 .textstyle2 {
-  color:white;
+  color: white;
   font-size: 110%;
   text-align: justify;
   margin: 0;
@@ -64,17 +69,20 @@ li {
 
 .textstyle3 {
   font-family: "Russo One", sans-serif;
-  color:white;
-  font-size:120%;
+  color: white;
+  font-size: 120%;
   text-align: justify;
   margin: 0;
 }
+
 .font-bold {
   font-weight: bold;
 }
+
 .position-rel {
   position: relative;
 }
+
 .d-grid {
   display: grid;
 }
@@ -133,7 +141,6 @@ li {
 .title-side {
   margin: 0 6px;
 }
-
 
 .a-side {
   border-right: 1px solid gray;
@@ -263,7 +270,7 @@ li {
   align-items: center;
   justify-content: center;
   width: 99.7%;
-  margin:auto;
+  margin: auto;
 }
 
 .mainpic {
@@ -279,7 +286,7 @@ li {
   flex: 2;
   height: 67vh;
   padding: 1%;
-  margin:2px;
+  margin: 2px;
 }
 
 .side {
@@ -288,40 +295,43 @@ li {
 
 .side1 {
   background:
-  linear-gradient(
-    180deg,
-    rgba(27, 112, 186, 0.5) 0%,
-    rgba(68, 152, 217, 0.11528361344537819) 100%
-  ),
-  url("../images/side-top.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-height:33vh;
-padding: 2%;
-margin: 2px;
+    linear-gradient(
+      180deg,
+      rgba(27, 112, 186, 0.5) 0%,
+      rgba(68, 152, 217, 0.11528361344537819) 100%
+    ),
+    url("../images/side-top.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 33vh;
+  padding: 2%;
+  margin: 2px;
 }
 
 .side2 {
   background:
-  linear-gradient(
-    180deg,
-    rgba(27, 112, 186, 0.5) 0%,
-    rgba(68, 152, 217, 0.11528361344537819) 100%
-  ),
-  url("../images/side-pic.png");
-background-size: cover;
-background-repeat: no-repeat;
-margin:2px;
-height:32vh;
-padding:2%;
+    linear-gradient(
+      180deg,
+      rgba(27, 112, 186, 0.5) 0%,
+      rgba(68, 152, 217, 0.11528361344537819) 100%
+    ),
+    url("../images/side-pic.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2px;
+  height: 32vh;
+  padding: 2%;
 }
 
-.headlinecont,.sidecont1,.sidecont2 {
+.headlinecont,
+.sidecont1,
+.sidecont2 {
   position: absolute;
-  bottom:5px;
+  bottom: 5px;
 }
 
-.sidecont1,.sidecont2 {
+.sidecont1,
+.sidecont2 {
   width: 90%;
   margin: auto;
 }
@@ -357,8 +367,9 @@ padding:2%;
 }
 
 .latest-news {
-margin-top: 5vh;
+  margin-top: 5vh;
 }
+
 .latest-funding {
   margin-top: 5vh;
 }
@@ -390,8 +401,8 @@ margin-top: 5vh;
 }
 
 .item2 {
-  margin-bottom:5%;
-  margin-top:4%;
+  margin-bottom: 5%;
+  margin-top: 4%;
 }
 
 .item2 img {
@@ -427,9 +438,11 @@ margin-top: 5vh;
   line-height: 2;
   color: rgba(36, 36, 36, 0.5);
 }
+
 .subtext {
-  font-size:80%;
+  font-size: 80%;
 }
+
 .subheadnormal {
   margin-top: 3px;
   font-size: 115%;
@@ -676,6 +689,7 @@ footer {
     font-size: 78%;
     height: 30px;
   }
+
   .d-m-block {
     display: block;
   }
@@ -745,36 +759,37 @@ footer {
     padding: 5px 5px 5px 105px;
     clear: both;
   }
-/* text styling for medium screen*/
+
+  /* text styling for medium screen */
   .textstyle1 {
-    color:white;
+    color: white;
     font-size: 170%;
     text-align: justify;
   }
 
   .textstyle2 {
-    color:white;
+    color: white;
     font-size: 70%;
     text-align: justify;
-    }
+  }
 
   .textstyle3 {
-    color:white;
-    font-size:90%;
+    color: white;
+    font-size: 90%;
     text-align: justify;
   }
 
   /* logo sizing */
 
-.logo-TNW img {
-  display: none;
-}
+  .logo-TNW img {
+    display: none;
+  }
 
-.logo-TNW p {
-  display: none;
-}
+  .logo-TNW p {
+    display: none;
+  }
 
-/* styling latest news section */
+  /* styling latest news section */
   .section-4 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -827,7 +842,6 @@ footer {
     text-align: center;
     padding-bottom: 20px;
   }
-
 }
 
 
@@ -839,6 +853,7 @@ footer {
   .navtop {
     display: none;
   }
+
   .d-sm-block {
     display: block;
   }
@@ -903,132 +918,137 @@ footer {
     clear: both;
   }
 
-.mainpic,.side1,.side2 {
-  height: 25vh;
-}
+  .mainpic,
+  .side1,
+  .side2 {
+    height: 25vh;
+  }
 
-.textstyle1 {
-  color:white;
-  font-size: 140%;
-  text-align: justify;
-}
+  .textstyle1 {
+    color: white;
+    font-size: 140%;
+    text-align: justify;
+  }
 
-.textstyle2 {
-  color:white;
-  font-size: 90%;
-  text-align: justify;
-}
+  .textstyle2 {
+    color: white;
+    font-size: 90%;
+    text-align: justify;
+  }
 
-.textstyle3 {
-  color:white;
-  font-size:110%;
-  text-align: justify;
-}
+  .textstyle3 {
+    color: white;
+    font-size: 110%;
+    text-align: justify;
+  }
 
   /* logo sizing */
 
-.logo-TNW img {
-  display: none;
-}
-.logo-TNW p {
-  display: none;
-}
+  .logo-TNW img {
+    display: none;
+  }
 
-/* Latesnt news */
+  .logo-TNW p {
+    display: none;
+  }
 
-.newscont {
-  width: 90%;
-  margin: auto;
-}
+  /* Latesnt news */
 
-.itemsmall {
-  display: flex;
-  margin-bottom: 15px;
-}
+  .newscont {
+    width: 90%;
+    margin: auto;
+  }
 
-.itemsmall img {
-  width: 80px;
-  height:100px;
-}
+  .itemsmall {
+    display: flex;
+    margin-bottom: 15px;
+  }
 
-.itemsmall h4,
-.ditem {
-  display: flex;
-}
+  .itemsmall img {
+    width: 80px;
+    height: 100px;
+  }
 
-.imgcont img {
-  width: 100px;
-  height: 70px;
-  margin-right:20px;
-}
+  .itemsmall h4,
+  .ditem {
+    display: flex;
+  }
 
-.p-holder {
-  margin-bottom: 10px;
-}
-.a-side {
-  border: none;
-  font-weight:100;
+  .imgcont img {
+    width: 100px;
+    height: 70px;
+    margin-right: 20px;
+  }
 
-}
+  .p-holder {
+    margin-bottom: 10px;
+  }
 
-.dealhead a {
-  font-size: 100%;
-}
+  .a-side {
+    border: none;
+    font-weight: 100;
+  }
 
-.textcontsmall h4 a {
-  font-size: 85%;
-  margin-left:10px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
-.textcontsmall p {
-  font-size: 80%;
-  margin-left:10px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
+  .dealhead a {
+    font-size: 100%;
+  }
 
-.dealhead {
-  margin-left: 10px;
-}
-.dealprice {
-  margin-left: 10px;
-}
-.ptag {
-  display: none;
-}
+  .textcontsmall h4 a {
+    font-size: 85%;
+    margin-left: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 
-/* Latesnt news */
-.section-4 {
-  margin: auto;
-}
+  .textcontsmall p {
+    font-size: 80%;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
-.footnav {
-  text-align: center;
-  width: 60%;
-  margin: 2% auto;
-  font-size: 75%;
-  padding-bottom: 20px;
-}
-.footbottom {
-  font-size: 90%;
-}
+  .dealhead {
+    margin-left: 10px;
+  }
 
-.section-4-item h2{
-  margin:10px 0;
+  .dealprice {
+    margin-left: 10px;
+  }
 
-}
+  .ptag {
+    display: none;
+  }
 
-.footcont {
-  width: 200px;
-  margin: 0 auto;
-}
+  /* Latesnt news */
+  .section-4 {
+    margin: auto;
+  }
 
-#tnwfooter {
-  width: 30px;
-  height: 15px;
-}
+  .footnav {
+    text-align: center;
+    width: 60%;
+    margin: 2% auto;
+    font-size: 75%;
+    padding-bottom: 20px;
+  }
 
+  .footbottom {
+    font-size: 90%;
+  }
+
+  .section-4-item h2 {
+    margin: 10px 0;
+  }
+
+  .footcont {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  #tnwfooter {
+    width: 30px;
+    height: 15px;
+  }
 }
 
 
@@ -1039,6 +1059,7 @@ footer {
   .navtop {
     display: none;
   }
+
   .d-xsm-block {
     display: block;
   }
@@ -1070,7 +1091,6 @@ footer {
   .navfixed {
     height: 50px;
     font-family: "Nova Square", cursive;
-
   }
 
   #searchbtn {
@@ -1104,130 +1124,139 @@ footer {
     clear: both;
   }
 
-.mainpic,.side1,.side2 {
-  height: 25vh;
-}
+  .mainpic,
+  .side1,
+  .side2 {
+    height: 25vh;
+  }
 
-.textstyle1 {
-  color:white;
-  font-size: 100%;
-  text-align: justify;
-}
+  .textstyle1 {
+    color: white;
+    font-size: 100%;
+    text-align: justify;
+  }
 
-.textstyle2 {
-  color:white;
-  font-size: 70%;
-  text-align: justify;
-}
+  .textstyle2 {
+    color: white;
+    font-size: 70%;
+    text-align: justify;
+  }
 
-.textstyle3 {
-  color:white;
-  font-size:100%;
-  text-align: justify;
-}
+  .textstyle3 {
+    color: white;
+    font-size: 100%;
+    text-align: justify;
+  }
 
   /* logo sizing */
 
-.logo-TNW img {
-  display: none;
-}
-.logo-TNW p {
-  display: none;
-}
+  .logo-TNW img {
+    display: none;
+  }
 
-/* Latesnt news */
+  .logo-TNW p {
+    display: none;
+  }
 
-.newscont {
-  width: 90%;
-  margin: auto;
-}
+  /* Latesnt news */
 
-.itemsmall {
-  margin-bottom: 15px;
-  display: flex;
-}
+  .newscont {
+    width: 90%;
+    margin: auto;
+  }
 
-.itemsmall img {
-  width: 70px;
-  height:100px;
-}
+  .itemsmall {
+    margin-bottom: 15px;
+    display: flex;
+  }
 
-.imgcont img {
-  width: 100px;
-  height: 70px;
-  margin-right:20px;
-}
+  .itemsmall img {
+    width: 70px;
+    height: 100px;
+  }
 
-.p-holder {
-  margin-bottom: 10px;
-}
-.a-side {
-  border: none;
-  font-weight:100;
+  .imgcont img {
+    width: 100px;
+    height: 70px;
+    margin-right: 20px;
+  }
 
-}
-.textcontsmall {
-  margin-left:10px;
-}
+  .p-holder {
+    margin-bottom: 10px;
+  }
 
-.textcontsmall h4 a {
-  font-size: 80%;
-  margin-left:10px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  text-align:justify;
+  .a-side {
+    border: none;
+    font-weight: 100;
+  }
 
-}
-.textcontsmall p {
-  font-size: 70%;
-  margin-left:10px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-.ditem {
-  display: flex;
-}
-.dealhead {
-  margin-left: 10px;
-}
-.dealprice {
-  margin-left: 10px;
-}
-.ptag {
-  display: none;
-}
+  .textcontsmall {
+    margin-left: 10px;
+  }
 
-/* Latesnt news */
-.section-4 {
-  margin: auto;
-}
+  .textcontsmall h4 a {
+    font-size: 80%;
+    margin-left: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: justify;
+  }
 
-.footnav {
-  text-align: center;
-  width: 60%;
-  margin: 2% auto;
-  font-size: 75%;
-  padding-bottom: 20px;
-}
-.footbottom {
-  font-size: 90%;
-}
-.ficon {
-  font-size:75%;
-}
-.section-4-item h2{
-  margin:10px 0;
+  .textcontsmall p {
+    font-size: 70%;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
-}
+  .ditem {
+    display: flex;
+  }
 
-.footcont {
-  width: 200px;
-  margin: 0 auto;
-}
+  .dealhead {
+    margin-left: 10px;
+  }
 
-#tnwfooter {
-  width: 30px;
-  height: 15px;
-}
+  .dealprice {
+    margin-left: 10px;
+  }
 
+  .ptag {
+    display: none;
+  }
+
+  /* Latesnt news */
+  .section-4 {
+    margin: auto;
+  }
+
+  .footnav {
+    text-align: center;
+    width: 60%;
+    margin: 2% auto;
+    font-size: 75%;
+    padding-bottom: 20px;
+  }
+
+  .footbottom {
+    font-size: 90%;
+  }
+
+  .ficon {
+    font-size: 75%;
+  }
+
+  .section-4-item h2 {
+    margin: 10px 0;
+  }
+
+  .footcont {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  #tnwfooter {
+    width: 30px;
+    height: 15px;
+  }
 }
