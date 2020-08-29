@@ -1144,10 +1144,11 @@ footer {
 
 .itemsmall {
   margin-bottom: 15px;
+  display: flex;
 }
 
 .itemsmall img {
-  width: 80px;
+  width: 70px;
   height:100px;
 }
 
@@ -1165,20 +1166,27 @@ footer {
   font-weight:100;
 
 }
+.textcontsmall {
+  margin-left:10px;
+}
 
 .textcontsmall h4 a {
-  font-size: 85%;
-  margin-left:10px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
-.textcontsmall p {
   font-size: 80%;
   margin-left:10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align:justify;
+
+}
+.textcontsmall p {
+  font-size: 70%;
+  margin-left:10px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-
+.ditem {
+  display: flex;
+}
 .dealhead {
   margin-left: 10px;
 }
