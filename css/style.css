@@ -1083,7 +1083,8 @@ footer {
     font-size: 110%;
   }
 
-  .hamburger {
+  .hamburger,
+  #bar {
     display: block;
     color: orangered;
     margin-left: 10px;
