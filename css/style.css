@@ -1,0 +1,1231 @@
+/* General reset and classes */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+ul,
+li {
+  margin: 0;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.flexspacebetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.font90 {
+  font-size: 90%;
+}
+
+.font1 {
+  font-family: "Varela Round", sans-serif;
+}
+
+.font2 {
+  font-family: "Russo One", sans-serif;
+}
+
+.textdeco-none {
+  text-decoration: none;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.textstyle1 {
+  font-family: "Russo One", sans-serif;
+  color: white;
+  font-size: 200%;
+  text-align: justify;
+  margin: 0;
+}
+
+.textstyle2 {
+  color: white;
+  font-size: 110%;
+  text-align: justify;
+  margin: 0;
+}
+
+.textstyle3 {
+  font-family: "Russo One", sans-serif;
+  color: white;
+  font-size: 120%;
+  text-align: justify;
+  margin: 0;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.position-rel {
+  position: relative;
+}
+
+.d-grid {
+  display: grid;
+}
+
+/* styling for large screen */
+
+/* top navigation styling */
+.navtop {
+  background-color: black;
+  padding: 10px;
+}
+
+.navlist {
+  list-style-type: none;
+}
+
+.navlist li {
+  margin-right: 15px;
+}
+
+.navlist a {
+  color: #aaa;
+}
+
+.footbottom a {
+  color: rgba(167, 169, 169, 1);
+}
+
+.footnav a {
+  text-transform: uppercase;
+  color: rgba(167, 169, 169, 1);
+  margin-right: 10px;
+}
+
+.textfoot a {
+  font-size: 12px;
+  color: rgba(36, 36, 36, 0.9);
+}
+
+.title a {
+  color: #f42;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.titleandlinks {
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: baseline;
+}
+
+.titleholder {
+  margin-right: auto;
+}
+
+.title-side {
+  margin: 0 6px;
+}
+
+.a-side {
+  border-right: 1px solid gray;
+  padding-right: 3px;
+  color: #f42;
+}
+
+.item a {
+  color: black;
+  font-size: 16px;
+  font-family: "Varela Round", sans-serif;
+  font-weight: bold;
+}
+
+.yellow-nav a {
+  margin-left: 15px;
+  color: black;
+  font-size: 15px;
+}
+
+.dealtitlediv p a {
+  color: #f42;
+}
+
+.navlist a:hover {
+  color: white;
+}
+
+.whitetext {
+  color: white;
+}
+
+/* navlogom&s style */
+.navlogom-m {
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  width: 106px;
+  height: 55px;
+  text-align: center;
+  padding-top: 25px;
+  display: none;
+  top: 0;
+  left: 0;
+}
+
+.navlogom-m img {
+  width: 80%;
+}
+
+.navlogom-s {
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  width: 85px;
+  height: 25px;
+  padding-top: 15px;
+  padding-left: 20px;
+  display: none;
+}
+
+/* navigation fixed styling */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navfixed {
+  height: 50px;
+  font-family: "Nova Square", cursive;
+  font-size: 17px;
+  background-color: white;
+}
+
+.sideinfologo {
+  width: 125px;
+  height: 54px;
+}
+
+.sideinfo {
+  margin-right: 25px;
+}
+
+.time {
+  margin-right: 20px;
+  font-size: 120%;
+  color: red;
+}
+
+.ticket {
+  background-color: #0cc;
+  color: white;
+  width: 90px;
+  height: 30px;
+  font-size: 60%;
+  border: none;
+  border-radius: 3px;
+}
+
+.ticket:hover {
+  background-color: purple;
+}
+
+.searchbtn {
+  transform: rotate(90deg);
+  color: #aaa;
+}
+
+.hamburger,
+#bar {
+  display: none;
+}
+
+.navli2 a:hover {
+  color: black;
+}
+
+/* yellow nav styling */
+
+.yellow-nav {
+  background-color: #ffe712;
+  height: 20px;
+  padding: 5px;
+}
+
+/* Styles for the main news section */
+
+/* styling for display */
+
+.display {
+  align-items: center;
+  justify-content: center;
+  width: 99.7%;
+  margin: auto;
+}
+
+.mainpic {
+  background:
+    linear-gradient(
+      180deg,
+      #f42 0%,
+      rgba(68, 152, 217, 0.11528361344537819) 100%
+    ),
+    url("../images/main-pic-big.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 2;
+  height: 67vh;
+  padding: 1%;
+  margin: 2px;
+}
+
+.side {
+  flex: 1;
+}
+
+.side1 {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(27, 112, 186, 0.5) 0%,
+      rgba(68, 152, 217, 0.11528361344537819) 100%
+    ),
+    url("../images/side-top.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 33vh;
+  padding: 2%;
+  margin: 2px;
+}
+
+.side2 {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(27, 112, 186, 0.5) 0%,
+      rgba(68, 152, 217, 0.11528361344537819) 100%
+    ),
+    url("../images/side-pic.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2px;
+  height: 32vh;
+  padding: 2%;
+}
+
+.headlinecont,
+.sidecont1,
+.sidecont2 {
+  position: absolute;
+  bottom: 5px;
+}
+
+.sidecont1,
+.sidecont2 {
+  width: 90%;
+  margin: auto;
+}
+
+/* logo sizing */
+.logo-TNW {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-TNW img {
+  width: 250px;
+  height: 100px;
+  margin: 10px;
+}
+
+.logo-TNW p {
+  color: #fff;
+  margin: 20px;
+}
+
+/* styling latest news section */
+
+.newscont {
+  width: 90%;
+  margin: auto;
+}
+
+.newsitem {
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.latest-news {
+  margin-top: 5vh;
+}
+
+.latest-funding {
+  margin-top: 5vh;
+}
+
+.item img {
+  width: 100%;
+}
+
+.author {
+  font-size: 13px;
+  color: grey;
+}
+
+/* styling latest funding section */
+
+.styletitle {
+  background-color: #f42;
+  text-align: left;
+  padding: 10px 0 10px 80px;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.subheadstyle {
+  background-color: rgba(255, 68, 34, 0.08);
+  text-align: left;
+  padding: 5px 0 5px 80px;
+}
+
+.item2 {
+  margin-bottom: 5%;
+  margin-top: 4%;
+}
+
+.item2 img {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.textfoot {
+  padding-top: 20px;
+}
+
+.mr {
+  margin-right: 5px;
+}
+
+.latest {
+  background-color: #fffaf8;
+}
+
+.underline {
+  background-color: #f42;
+  height: 1px;
+  margin: 10px 0;
+  opacity: 0.5;
+}
+
+.bottomtext {
+  font-size: 11px;
+  text-align: left;
+  line-height: 2;
+  color: rgba(36, 36, 36, 0.5);
+}
+
+.subtext {
+  font-size: 80%;
+}
+
+.subheadnormal {
+  margin-top: 3px;
+  font-size: 115%;
+}
+
+/* this is the styling for the section for news items */
+
+.section-4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  grid-gap: 5px;
+  width: 90%;
+}
+
+/* Grid item styling. The item container is flexed with direction of column */
+
+.section-4-item {
+  flex-direction: column;
+  padding: 10px;
+}
+
+.section-4-item h2 {
+  color: #ef5350;
+  font-size: 120%;
+}
+
+.sec-4-big-pic-first {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 1) 100%,
+      rgba(0, 0, 0, 0.2) 101%
+    ),
+    url("../images/apple-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.sec-4-big-pic-second {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 1) 100%,
+      rgba(0, 0, 0, 0.2) 101%
+    ),
+    url("../images/second.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.sec-4-big-pic-third {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 1) 100%,
+      rgba(0, 0, 0, 0.2) 101%
+    ),
+    url("../images/third.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.headline-header {
+  padding: 150px 0 0 20px;
+  color: #fff;
+  font-size: 85%;
+}
+
+.pic-headline {
+  color: #fff;
+  font-size: 105%;
+  padding: 0 0 0 20px;
+  margin: 5px 0;
+}
+
+.view-history {
+  color: #fff;
+  padding: 0 0 0 20px;
+  font-size: 75%;
+}
+
+/* div with flex rows */
+.flexed-div {
+  display: flex;
+  background-color: #fce4ec;
+}
+
+.flexed-desc {
+  width: 80%;
+}
+
+.flexed-header {
+  padding-top: 15px;
+}
+
+.flexed-desc p {
+  color: #ef5350;
+  padding-left: 5px;
+  margin: 1px;
+}
+
+.flexed-pic {
+  background-image: url("../images/bit.jpg");
+  width: 130px;
+  height: 96px;
+}
+
+/* ul elements containing div */
+.ul-news-elements {
+  padding: 20px 10px;
+}
+
+.ul-news-elements li {
+  margin-left: 0;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-top: 5px;
+  border-bottom: 1px solid gray;
+  font-family: "Varela Round", sans-serif;
+  font-size: 12px;
+  color: grey;
+}
+
+.ul-news-elements ul {
+  margin-left: 0;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  font-size: 12px;
+  color: grey;
+}
+
+/* styling latest deal section */
+
+.dealhead,
+.dealprice {
+  margin: 5px 0;
+}
+
+.ditem img {
+  width: 100%;
+  height: 200px;
+}
+
+.ditem {
+  margin-bottom: 20px;
+}
+
+.dealtitlediv {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imgcont {
+  overflow: hidden;
+}
+
+.ptag {
+  position: absolute;
+  top: -20px;
+  right: -110px;
+  transform: rotate(45deg);
+  background-color: #ffe712;
+  height: 25px;
+  width: 250px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+/* styling for footer section */
+
+footer {
+  background-color: #1a1a1a;
+  padding: 2% 0 0 0;
+  text-align: center;
+}
+
+.iconcont {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.ficon {
+  color: white;
+  margin: 8px;
+  font-size: 100%;
+  background-color: #333;
+  padding: 8px;
+  border-radius: 50%;
+  border: 2px solid #333;
+}
+
+.ficon:hover {
+  background-color: black;
+  border: 2px solid grey;
+}
+
+.footnav {
+  text-align: center;
+  margin: 2% auto;
+  font-size: 75%;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+.footnav li {
+  list-style-type: none;
+}
+
+.footnav a:hover {
+  color: white;
+}
+
+.footbottom {
+  background-color: #000;
+  padding: 2% 0;
+  text-align: center;
+}
+
+.tnwfooter {
+  width: 50px;
+  height: 25px;
+  margin-right: 5px;
+  padding: 0;
+}
+
+/* responsiveness for medium devices */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  /* top navigation styling */
+  .navtop {
+    background-color: black;
+    padding: 10px;
+    font-size: 78%;
+    height: 30px;
+  }
+
+  .d-m-block {
+    display: block;
+  }
+
+  .navlist li {
+    margin-right: 5px;
+  }
+
+  /* navlogom&s style */
+  .navlogom-m {
+    background: linear-gradient(to bottom right, #c09, #f42 85%);
+    width: 106px;
+    height: 60px;
+    text-align: center;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    z-index: 200;
+  }
+
+  .navlist {
+    margin-left: 80px;
+  }
+
+  .navlogom-m img,
+  .navlogom-s img {
+    width: 70%;
+  }
+
+  /* navigation fixed styling */
+  .header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .navfixed {
+    height: 40px;
+    font-family: "Nova Square", cursive;
+  }
+
+  .navli2 {
+    margin-left: -60px;
+  }
+
+  .searchbtn {
+    border-bottom: 1px rgba(84, 84, 84, 0.27) solid;
+    padding-bottom: 10px;
+    width: 25px;
+    padding-left: 15px;
+    font-size: 110%;
+  }
+
+  /* yellow nav styling */
+
+  .yellow-nav {
+    background-color: #ffe712;
+    height: 20px;
+    padding: 5px 5px 5px 105px;
+    clear: both;
+  }
+
+  /* text styling for medium screen */
+  .textstyle1 {
+    color: white;
+    font-size: 170%;
+    text-align: justify;
+  }
+
+  .textstyle2 {
+    color: white;
+    font-size: 70%;
+    text-align: justify;
+  }
+
+  .textstyle3 {
+    color: white;
+    font-size: 90%;
+    text-align: justify;
+  }
+
+  /* logo sizing */
+
+  .logo-TNW img,
+  .logo-TNW p,
+  .hiddenmd {
+    display: none;
+  }
+
+  /* styling latest news section */
+  .section-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    grid-gap: 5px;
+    width: 90%;
+  }
+
+  /* styling latest news section */
+
+  .newscont {
+    width: 80%;
+    margin: auto;
+  }
+
+  .newsitem {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+  }
+
+  .item a {
+    color: black;
+    font-size: 16px;
+  }
+
+  .author {
+    font-size: 13px;
+    color: grey;
+  }
+
+  .title a {
+    color: #f42;
+    font-size: 28px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .titleandlinks {
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  .footnav {
+    width: 35%;
+    margin: 2% auto;
+    font-size: 75%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  #bar {
+    display: block;
+    color: orangered;
+    margin-left: 10px;
+    font-size: 120%;
+  }
+}
+
+/* responsiveness for mobile devices */
+@media only screen and (min-width: 450px) and (max-width: 767px) {
+  /* navigation small */
+
+  .navtop,
+  .navli2,
+  .hiddenmd,
+  .logo-TNW img,
+  .logo-TNW p {
+    display: none;
+  }
+
+  .d-sm-block {
+    display: block;
+  }
+
+  /* navlogom&s style */
+  .navlogom-s {
+    width: 85px;
+    height: 35px;
+    padding-top: 15px;
+    padding-left: 20px;
+  }
+
+  .navlogom-s img {
+    width: 70%;
+  }
+
+  /* navigation fixed styling */
+  .header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .navfixed {
+    height: 50px;
+    font-family: "Nova Square", cursive;
+  }
+
+  .searchbtn {
+    border-bottom: 1px rgba(84, 84, 84, 0.27) solid;
+    border-top: 1px rgba(84, 84, 84, 0.27) solid;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-top: 15px;
+    width: 35px;
+    font-size: 110%;
+  }
+
+  .hamburger,
+  #bar {
+    display: block;
+    color: orangered;
+    margin-left: 10px;
+    font-size: 120%;
+  }
+
+  /* yellow nav styling */
+
+  .yellow-nav {
+    background-color: #ffe712;
+    height: 30px;
+    padding-top: 20px;
+    text-align: center;
+    clear: both;
+  }
+
+  .mainpic,
+  .side1,
+  .side2 {
+    height: 25vh;
+  }
+
+  .textstyle1 {
+    color: white;
+    font-size: 140%;
+    text-align: justify;
+  }
+
+  .textstyle2 {
+    color: white;
+    font-size: 90%;
+    text-align: justify;
+  }
+
+  .textstyle3 {
+    color: white;
+    font-size: 110%;
+    text-align: justify;
+  }
+
+  /* logo sizing */
+
+  /* Latesnt news */
+
+  .newscont {
+    width: 90%;
+    margin: auto;
+  }
+
+  .itemsmall {
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  .itemsmall img {
+    width: 80px;
+    height: 100px;
+  }
+
+  .itemsmall h4,
+  .ditem {
+    display: flex;
+  }
+
+  .imgcont img {
+    width: 100px;
+    height: 70px;
+    margin-right: 20px;
+  }
+
+  .p-holder {
+    margin-bottom: 10px;
+  }
+
+  .a-side {
+    border: none;
+    font-weight: 100;
+  }
+
+  .dealhead a {
+    font-size: 100%;
+  }
+
+  .textcontsmall h4 a {
+    font-size: 85%;
+    margin-left: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .textcontsmall p {
+    font-size: 80%;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .dealhead,
+  .dealprice {
+    margin-left: 10px;
+  }
+
+  .ptag {
+    display: none;
+  }
+
+  /* Latesnt news */
+  .section-4 {
+    margin: auto;
+  }
+
+  .footnav {
+    text-align: center;
+    width: 60%;
+    margin: 2% auto;
+    font-size: 75%;
+    padding-bottom: 20px;
+  }
+
+  .footbottom {
+    font-size: 90%;
+  }
+
+  .section-4-item h2 {
+    margin: 10px 0;
+  }
+
+  .footcont {
+    width: 230px;
+    margin: 0 auto;
+  }
+
+  .tnwfooter {
+    width: 30px;
+    height: 15px;
+    padding: 0;
+  }
+}
+
+/* responsiveness for mobile devices */
+@media only screen and (max-width: 449px) {
+  /* navigation small */
+
+  .navtop,
+  .navli2,
+  .hiddenmd,
+  .logo-TNW img,
+  .logo-TNW p {
+    display: none;
+  }
+
+  .d-xsm-block {
+    display: block;
+  }
+
+  /* navlogom&s style */
+  .navlogom-s {
+    width: 85px;
+    height: 35px;
+    padding-top: 15px;
+    padding-left: 20px;
+  }
+
+  .navlogom-s img {
+    width: 70%;
+  }
+
+  /* navigation fixed styling */
+  .header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .navfixed {
+    height: 50px;
+    font-family: "Nova Square", cursive;
+  }
+
+  .searchbtn {
+    border-bottom: 1px rgba(84, 84, 84, 0.27) solid;
+    border-top: 1px rgba(84, 84, 84, 0.27) solid;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-top: 15px;
+    width: 35px;
+    font-size: 110%;
+  }
+
+  .hamburger,
+  #bar {
+    display: block;
+    color: orangered;
+    margin-left: 10px;
+    font-size: 120%;
+  }
+
+  /* yellow nav styling */
+
+  .yellow-nav {
+    background-color: #ffe712;
+    height: 30px;
+    padding-top: 10px;
+    text-align: center;
+    clear: both;
+  }
+
+  .mainpic,
+  .side1,
+  .side2 {
+    height: 25vh;
+  }
+
+  .textstyle1 {
+    color: white;
+    font-size: 100%;
+    text-align: justify;
+  }
+
+  .textstyle2 {
+    color: white;
+    font-size: 70%;
+    text-align: justify;
+  }
+
+  .textstyle3 {
+    color: white;
+    font-size: 100%;
+    text-align: justify;
+  }
+
+  /* logo sizing */
+
+  /* Latesnt news */
+
+  .newscont {
+    width: 90%;
+    margin: auto;
+  }
+
+  .itemsmall {
+    margin-bottom: 15px;
+    display: flex;
+  }
+
+  .itemsmall img {
+    width: 70px;
+    height: 100px;
+  }
+
+  .imgcont img {
+    width: 100px;
+    height: 70px;
+    margin-right: 20px;
+  }
+
+  .p-holder {
+    margin-bottom: 10px;
+  }
+
+  .a-side {
+    border: none;
+    font-weight: 100;
+  }
+
+  .textcontsmall {
+    margin-left: 10px;
+  }
+
+  .textcontsmall h4 a {
+    font-size: 80%;
+    margin-left: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: justify;
+  }
+
+  .textcontsmall p {
+    font-size: 70%;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .ditem {
+    display: flex;
+  }
+
+  .dealhead {
+    margin-left: 10px;
+  }
+
+  .dealprice {
+    margin-left: 10px;
+  }
+
+  .ptag {
+    display: none;
+  }
+
+  /* Latesnt news */
+  .section-4 {
+    margin: auto;
+  }
+
+  .footnav {
+    text-align: center;
+    width: 60%;
+    margin: 2% auto;
+    font-size: 75%;
+    padding-bottom: 20px;
+  }
+
+  .footbottom {
+    font-size: 90%;
+  }
+
+  .ficon {
+    font-size: 75%;
+  }
+
+  .section-4-item h2 {
+    margin: 10px 0;
+  }
+
+  .footcont {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .tnwfooter {
+    width: 30px;
+    height: 15px;
+  }
+}
