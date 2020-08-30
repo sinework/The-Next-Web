@@ -831,7 +831,16 @@ footer {
     text-align: center;
     padding-bottom: 20px;
   }
+
+  #bar {
+    display: block;
+    color: orangered;
+    margin-left: 10px;
+    font-size: 120%;
+  }
 }
+
+
 
 /* responsiveness for mobile devices */
 @media only screen and (min-width: 450px) and (max-width: 767px) {
@@ -884,7 +893,8 @@ footer {
     font-size: 110%;
   }
 
-  .hamburger {
+  .hamburger,
+  #bar {
     display: block;
     color: orangered;
     margin-left: 10px;
